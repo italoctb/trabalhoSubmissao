@@ -7,14 +7,14 @@ package form;
 
 /**
  *
- * @author Ítalo_2
+ * @author luci
  */
-public class app_pageOne extends javax.swing.JFrame {
+public class Pag1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form app_pageOne
+     * Creates new form pag1
      */
-    public app_pageOne() {
+    public Pag1() {
         initComponents();
     }
 
@@ -60,20 +60,21 @@ public class app_pageOne extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(app_pageOne.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pag1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(app_pageOne.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pag1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(app_pageOne.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pag1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(app_pageOne.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pag1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new app_pageOne().setVisible(true);
+                new Pag1().setVisible(true);
             }
         });
     }
