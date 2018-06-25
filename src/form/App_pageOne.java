@@ -16,6 +16,7 @@ public class App_pageOne extends javax.swing.JFrame {
      */
     public App_pageOne() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -28,20 +29,25 @@ public class App_pageOne extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        sair = new javax.swing.JButton();
+        iniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Noto Sans", 0, 36)); // NOI18N
         jLabel1.setText("JANELA INICIAL");
 
-        jButton1.setText("Sair");
-
-        jButton2.setText("Iniciar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        sair.setText("Sair");
+        sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                sairActionPerformed(evt);
+            }
+        });
+
+        iniciar.setText("Iniciar");
+        iniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iniciarActionPerformed(evt);
             }
         });
 
@@ -53,10 +59,10 @@ public class App_pageOne extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(182, 182, 182)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(iniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 93, Short.MAX_VALUE)
@@ -69,19 +75,25 @@ public class App_pageOne extends javax.swing.JFrame {
                 .addContainerGap(91, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(88, 88, 88)
-                .addComponent(jButton2)
+                .addComponent(iniciar)
                 .addGap(123, 123, 123)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void iniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iniciarActionPerformed
         Pag1 p1 = new Pag1();
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
+        p1.setVisible(true);
+        p1.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_iniciarActionPerformed
+
+    private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_sairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -120,8 +132,8 @@ public class App_pageOne extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton iniciar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton sair;
     // End of variables declaration//GEN-END:variables
 }
