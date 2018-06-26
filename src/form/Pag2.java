@@ -12,7 +12,7 @@ package form;
 public class Pag2 extends javax.swing.JFrame {
 
     /**
-     * Creates new form pag2
+     * Creates new form pag3
      */
     public Pag2() {
         initComponents();
@@ -486,6 +486,12 @@ public class Pag2 extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Pag2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

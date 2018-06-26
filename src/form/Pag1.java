@@ -31,22 +31,21 @@ public class Pag1 extends javax.swing.JFrame {
         sair2 = new javax.swing.JButton();
         prox1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        cf4 = new javax.swing.JTextField();
+        cf1 = new javax.swing.JTextField();
+        cf3 = new javax.swing.JTextField();
+        cf5 = new javax.swing.JTextField();
+        cf6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        federal = new javax.swing.JRadioButton();
+        estadual = new javax.swing.JRadioButton();
+        municipal = new javax.swing.JRadioButton();
+        privado = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -79,9 +78,9 @@ public class Pag1 extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jTextField19 = new javax.swing.JTextField();
         jTextField20 = new javax.swing.JTextField();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1366, 710));
 
         sair2.setText("Cancelar");
         sair2.addActionListener(new java.awt.event.ActionListener() {
@@ -99,6 +98,30 @@ public class Pag1 extends javax.swing.JFrame {
 
         jLabel1.setText("Cadastro de Financiadores");
 
+        cf4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cf4ActionPerformed(evt);
+            }
+        });
+
+        cf1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cf1ActionPerformed(evt);
+            }
+        });
+
+        cf3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cf3ActionPerformed(evt);
+            }
+        });
+
+        cf5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cf5ActionPerformed(evt);
+            }
+        });
+
         jLabel2.setText("ID Financiador:");
 
         jLabel3.setText("Nome de Fantasia:");
@@ -109,17 +132,37 @@ public class Pag1 extends javax.swing.JFrame {
 
         jLabel6.setText("Status  Jurídico:");
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("Federal");
+        buttonGroup1.add(federal);
+        federal.setText("Federal");
+        federal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                federalActionPerformed(evt);
+            }
+        });
 
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("Estadual");
+        buttonGroup1.add(estadual);
+        estadual.setText("Estadual");
+        estadual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                estadualActionPerformed(evt);
+            }
+        });
 
-        buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setText("Municipal");
+        buttonGroup1.add(municipal);
+        municipal.setText("Municipal");
+        municipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                municipalActionPerformed(evt);
+            }
+        });
 
-        buttonGroup1.add(jRadioButton4);
-        jRadioButton4.setText("Privado");
+        buttonGroup1.add(privado);
+        privado.setText("Privado");
+        privado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                privadoActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("Países:");
 
@@ -171,6 +214,13 @@ public class Pag1 extends javax.swing.JFrame {
 
         jLabel25.setText("Data de Fim:");
 
+        jFormattedTextField1.setText("jFormattedTextField1");
+        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFormattedTextField1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -197,21 +247,21 @@ public class Pag1 extends javax.swing.JFrame {
                                             .addComponent(jLabel4)
                                             .addGap(2, 2, 2)))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cf1, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(layout.createSequentialGroup()
                                             .addGap(8, 8, 8)
-                                            .addComponent(jRadioButton1)
+                                            .addComponent(federal)
                                             .addGap(18, 18, 18)
-                                            .addComponent(jRadioButton2)
+                                            .addComponent(estadual)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jRadioButton3)
+                                            .addComponent(municipal)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jRadioButton4)
+                                            .addComponent(privado)
                                             .addGap(86, 86, 86)
                                             .addComponent(jLabel7)
                                             .addGap(2, 2, 2)
-                                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(cf5, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cf3, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addGap(68, 68, 68)
                                     .addComponent(jLabel10)
@@ -272,10 +322,10 @@ public class Pag1 extends javax.swing.JFrame {
                                         .addComponent(jTextField17))))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(cf4, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
+                                    .addComponent(cf6, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
+                                    .addComponent(jFormattedTextField1))))
                         .addGap(229, 229, 229))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(45, 45, 45)
@@ -302,26 +352,26 @@ public class Pag1 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(cf1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
+                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(4, 4, 4)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cf3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cf4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jRadioButton4)
+                    .addComponent(federal)
+                    .addComponent(estadual)
+                    .addComponent(municipal)
+                    .addComponent(privado)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cf5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cf6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel9)
                 .addGap(18, 18, 18)
@@ -412,6 +462,50 @@ public class Pag1 extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_prox1ActionPerformed
 
+    private void cf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf1ActionPerformed
+        String a1 = cf1.getText();
+    }//GEN-LAST:event_cf1ActionPerformed
+
+    private void cf3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf3ActionPerformed
+        String a3 = cf3.getText();
+    }//GEN-LAST:event_cf3ActionPerformed
+
+    private void cf4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf4ActionPerformed
+        String a4 = cf4.getText();
+    }//GEN-LAST:event_cf4ActionPerformed
+
+    private void cf5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf5ActionPerformed
+        String a5 = cf5.getText();
+    }//GEN-LAST:event_cf5ActionPerformed
+
+    private void federalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_federalActionPerformed
+        if(federal.isSelected()){
+            String a011 = "Federal";
+        }
+    }//GEN-LAST:event_federalActionPerformed
+
+    private void estadualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estadualActionPerformed
+        if(estadual.isSelected()){
+        String a012 = "Estadual";
+        }
+    }//GEN-LAST:event_estadualActionPerformed
+
+    private void municipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_municipalActionPerformed
+        if(municipal.isSelected()){
+        String a013 = "Municipal";
+        }
+    }//GEN-LAST:event_municipalActionPerformed
+
+    private void privadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_privadoActionPerformed
+        if(privado.isSelected()){
+        String a014 = "Privado";
+        }
+    }//GEN-LAST:event_privadoActionPerformed
+
+    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -450,6 +544,14 @@ public class Pag1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JTextField cf1;
+    private javax.swing.JTextField cf3;
+    private javax.swing.JTextField cf4;
+    private javax.swing.JTextField cf5;
+    private javax.swing.JTextField cf6;
+    private javax.swing.JRadioButton estadual;
+    private javax.swing.JRadioButton federal;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -475,11 +577,6 @@ public class Pag1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
@@ -490,15 +587,12 @@ public class Pag1 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JRadioButton municipal;
+    private javax.swing.JRadioButton privado;
     private javax.swing.JButton prox1;
     private javax.swing.JButton sair2;
     // End of variables declaration//GEN-END:variables
