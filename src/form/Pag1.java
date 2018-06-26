@@ -81,7 +81,6 @@ public class Pag1 extends javax.swing.JFrame {
         jTextField20 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1366, 710));
 
         sair2.setText("Cancelar");
         sair2.addActionListener(new java.awt.event.ActionListener() {
