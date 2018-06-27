@@ -70,16 +70,16 @@
                                           <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jRadioButton12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jRadioButton15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ensino" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="profissional" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jRadioButton16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="outros" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jRadioButton13" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="pesquisa" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                                  <Component id="jRadioButton14" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="empresas" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -103,9 +103,9 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="resumo_field" min="-2" pref="501" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="dissertacao" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                                              <Component id="tese" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -176,9 +176,9 @@
                                   <Component id="palavra_chave_field" min="-2" pref="501" max="-2" attributes="0"/>
                                   <Component id="keywords_field" min="-2" pref="501" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
-                                      <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pt" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ing" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="projeto_pesquisa_field" min="-2" pref="501" max="-2" attributes="0"/>
                               </Group>
@@ -187,13 +187,13 @@
                               <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                               <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jRadioButton8" min="-2" max="-2" attributes="0"/>
+                              <Component id="publica" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jRadioButton9" min="-2" max="-2" attributes="0"/>
+                              <Component id="privada" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Component id="jRadioButton10" min="-2" max="-2" attributes="0"/>
+                              <Component id="inst" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jRadioButton11" min="-2" max="-2" attributes="0"/>
+                              <Component id="outros_2" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -239,11 +239,11 @@
                                   <Component id="ano_field" min="-2" pref="84" max="-2" attributes="0"/>
                                   <Component id="autores_field" min="-2" pref="501" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jRadioButton23" min="-2" max="-2" attributes="0"/>
+                                      <Component id="artistica" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton24" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bibliografica" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton25" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tecnica" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="noticia_field" alignment="0" min="-2" pref="501" max="-2" attributes="0"/>
                                   <Component id="area_conc_2_field" alignment="0" min="-2" pref="501" max="-2" attributes="0"/>
@@ -275,23 +275,23 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton19" min="-2" max="-2" attributes="0"/>
+                                      <Component id="s" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton20" min="-2" max="-2" attributes="0"/>
+                                      <Component id="n" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton21" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ss" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioButton22" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nn" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton27" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jornal" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioButton28" min="-2" max="-2" attributes="0"/>
+                                      <Component id="periodico" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -308,18 +308,18 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioButton17" min="-2" max="-2" attributes="0"/>
+                                      <Component id="sim" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton18" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nao" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel21" min="-2" pref="176" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="servidor" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="clt" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="juridica" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -354,8 +354,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dissertacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tese" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -421,8 +421,8 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pt" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ing" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -437,9 +437,9 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel21" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                          <Component id="jRadioButton5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="servidor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="juridica" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="clt" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -450,25 +450,25 @@
                           <Component id="jLabel23" min="-2" pref="31" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jRadioButton12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ensino" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pesquisa" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empresas" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel22" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="publica" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="privada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="inst" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="outros_2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel24" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton17" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton18" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="sim" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nao" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                      <Component id="jRadioButton16" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton15" min="-2" pref="16" max="-2" attributes="0"/>
+                                      <Component id="outros" min="-2" max="-2" attributes="0"/>
+                                      <Component id="profissional" min="-2" pref="16" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -481,10 +481,10 @@
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                          <Component id="jRadioButton25" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jRadioButton24" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tecnica" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="bibliografica" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jRadioButton23" min="-2" max="-2" attributes="0"/>
+                                      <Component id="artistica" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel25" min="-2" pref="31" max="-2" attributes="0"/>
@@ -531,21 +531,21 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="ano_field" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel26" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton19" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton20" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="s" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="n" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="autores_field" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel30" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton21" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton22" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ss" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton27" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jornal" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="periodico" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
@@ -613,7 +613,7 @@
         <Property name="text" type="java.lang.String" value="Tipo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+    <Component class="javax.swing.JRadioButton" name="dissertacao">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup1"/>
@@ -621,10 +621,10 @@
         <Property name="text" type="java.lang.String" value="Disserta&#xe7;&#xe3;o"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dissertacaoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+    <Component class="javax.swing.JRadioButton" name="tese">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup1"/>
@@ -632,7 +632,7 @@
         <Property name="text" type="java.lang.String" value="Tese"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="teseActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="autor_field">
@@ -684,7 +684,7 @@
         <Property name="text" type="java.lang.String" value="N&#xba; P&#xe1;ginas:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+    <Component class="javax.swing.JRadioButton" name="pt">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup2"/>
@@ -692,16 +692,19 @@
         <Property name="text" type="java.lang.String" value="Portugu&#xea;s"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ptActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+    <Component class="javax.swing.JRadioButton" name="ing">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup2"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Ingl&#xea;s"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ingActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel14">
       <Properties>
@@ -755,7 +758,7 @@
         <Property name="text" type="java.lang.String" value="Tipo de V&#xed;nculo Empregat&#xed;cio:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton5">
+    <Component class="javax.swing.JRadioButton" name="servidor">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup3"/>
@@ -763,10 +766,10 @@
         <Property name="text" type="java.lang.String" value="Servidor P&#xfa;blico"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="servidorActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton6">
+    <Component class="javax.swing.JRadioButton" name="clt">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup3"/>
@@ -774,10 +777,10 @@
         <Property name="text" type="java.lang.String" value="CLT"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cltActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton7">
+    <Component class="javax.swing.JRadioButton" name="juridica">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup3"/>
@@ -785,7 +788,7 @@
         <Property name="text" type="java.lang.String" value="Pessoa Jur&#xed;dica"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="juridicaActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel22">
@@ -793,7 +796,7 @@
         <Property name="text" type="java.lang.String" value="Tipo de Institui&#xe7;&#xe3;o:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton8">
+    <Component class="javax.swing.JRadioButton" name="publica">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup4"/>
@@ -801,10 +804,10 @@
         <Property name="text" type="java.lang.String" value="P&#xfa;blica"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="publicaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton9">
+    <Component class="javax.swing.JRadioButton" name="privada">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup4"/>
@@ -812,10 +815,10 @@
         <Property name="text" type="java.lang.String" value="Privada"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton9ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="privadaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton10">
+    <Component class="javax.swing.JRadioButton" name="inst">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup4"/>
@@ -823,10 +826,10 @@
         <Property name="text" type="java.lang.String" value="Institui&#xe7;&#xe3;o de Ensino e Pesquisa"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton10ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="instActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton11">
+    <Component class="javax.swing.JRadioButton" name="outros_2">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup4"/>
@@ -834,7 +837,7 @@
         <Property name="text" type="java.lang.String" value="Outros"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton11ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="outros_2ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel23">
@@ -842,7 +845,7 @@
         <Property name="text" type="java.lang.String" value="Expectativa de Atua&#xe7;&#xe3;o:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton12">
+    <Component class="javax.swing.JRadioButton" name="ensino">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup5"/>
@@ -850,10 +853,10 @@
         <Property name="text" type="java.lang.String" value="Ensino e Pesquisa"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton12ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ensinoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton13">
+    <Component class="javax.swing.JRadioButton" name="pesquisa">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup5"/>
@@ -861,10 +864,10 @@
         <Property name="text" type="java.lang.String" value="Pesquisa"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton13ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pesquisaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton14">
+    <Component class="javax.swing.JRadioButton" name="empresas">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup5"/>
@@ -872,10 +875,10 @@
         <Property name="text" type="java.lang.String" value="Empresas"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton14ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="empresasActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton15">
+    <Component class="javax.swing.JRadioButton" name="profissional">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup5"/>
@@ -883,10 +886,10 @@
         <Property name="text" type="java.lang.String" value="Profissional Aut&#xf4;nomo"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton15ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="profissionalActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton16">
+    <Component class="javax.swing.JRadioButton" name="outros">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup5"/>
@@ -894,7 +897,7 @@
         <Property name="text" type="java.lang.String" value="Outros"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton16ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="outrosActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel24">
@@ -902,7 +905,7 @@
         <Property name="text" type="java.lang.String" value="Mesma &#xc1;rea de Atua&#xe7;&#xe3;o: "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton17">
+    <Component class="javax.swing.JRadioButton" name="sim">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup6"/>
@@ -910,10 +913,10 @@
         <Property name="text" type="java.lang.String" value="Sim"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton17ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton18">
+    <Component class="javax.swing.JRadioButton" name="nao">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup6"/>
@@ -921,7 +924,7 @@
         <Property name="text" type="java.lang.String" value="N&#xe3;o"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton18ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="naoActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel12">
@@ -952,7 +955,7 @@
         <Property name="text" type="java.lang.String" value="Vinculada a Trabalho de Conclus&#xe3;o:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton19">
+    <Component class="javax.swing.JRadioButton" name="s">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup7"/>
@@ -960,10 +963,10 @@
         <Property name="text" type="java.lang.String" value="Sim"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton19ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton20">
+    <Component class="javax.swing.JRadioButton" name="n">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup7"/>
@@ -971,7 +974,7 @@
         <Property name="text" type="java.lang.String" value="N&#xe3;o"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton20ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="id_producao_field">
@@ -992,7 +995,7 @@
         <Property name="text" type="java.lang.String" value="&#xc9; o mais Relevante:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton21">
+    <Component class="javax.swing.JRadioButton" name="ss">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup8"/>
@@ -1000,10 +1003,10 @@
         <Property name="text" type="java.lang.String" value="Sim"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton21ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ssActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton22">
+    <Component class="javax.swing.JRadioButton" name="nn">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup8"/>
@@ -1011,7 +1014,7 @@
         <Property name="text" type="java.lang.String" value="N&#xe3;o"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton22ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nnActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel31">
@@ -1019,7 +1022,7 @@
         <Property name="text" type="java.lang.String" value="Tipo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton23">
+    <Component class="javax.swing.JRadioButton" name="artistica">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup9"/>
@@ -1027,10 +1030,10 @@
         <Property name="text" type="java.lang.String" value="Art&#xed;stica"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton23ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="artisticaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton24">
+    <Component class="javax.swing.JRadioButton" name="bibliografica">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup9"/>
@@ -1038,10 +1041,10 @@
         <Property name="text" type="java.lang.String" value="Bibliografica"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton24ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bibliograficaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton25">
+    <Component class="javax.swing.JRadioButton" name="tecnica">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup9"/>
@@ -1049,10 +1052,10 @@
         <Property name="text" type="java.lang.String" value="T&#xe9;cnica"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton25ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tecnicaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton27">
+    <Component class="javax.swing.JRadioButton" name="jornal">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup10"/>
@@ -1060,10 +1063,10 @@
         <Property name="text" type="java.lang.String" value="Artigo em jornal ou pesquisa"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton27ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jornalActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton28">
+    <Component class="javax.swing.JRadioButton" name="periodico">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup10"/>
@@ -1071,7 +1074,7 @@
         <Property name="text" type="java.lang.String" value="Artigo em Peri&#xf3;dico"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton28ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="periodicoActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel33">

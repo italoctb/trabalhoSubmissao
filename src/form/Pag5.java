@@ -88,8 +88,8 @@ public class Pag5 extends javax.swing.JFrame {
         id_discente_field = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        dissertacao = new javax.swing.JRadioButton();
+        tese = new javax.swing.JRadioButton();
         autor_field = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         data_defesa_field = new javax.swing.JTextField();
@@ -104,8 +104,8 @@ public class Pag5 extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         paginas_field = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        pt = new javax.swing.JRadioButton();
+        ing = new javax.swing.JRadioButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         area_conc_field = new javax.swing.JTextField();
@@ -120,44 +120,44 @@ public class Pag5 extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         financiador_field = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
+        servidor = new javax.swing.JRadioButton();
+        clt = new javax.swing.JRadioButton();
+        juridica = new javax.swing.JRadioButton();
         jLabel22 = new javax.swing.JLabel();
-        jRadioButton8 = new javax.swing.JRadioButton();
-        jRadioButton9 = new javax.swing.JRadioButton();
-        jRadioButton10 = new javax.swing.JRadioButton();
-        jRadioButton11 = new javax.swing.JRadioButton();
+        publica = new javax.swing.JRadioButton();
+        privada = new javax.swing.JRadioButton();
+        inst = new javax.swing.JRadioButton();
+        outros_2 = new javax.swing.JRadioButton();
         jLabel23 = new javax.swing.JLabel();
-        jRadioButton12 = new javax.swing.JRadioButton();
-        jRadioButton13 = new javax.swing.JRadioButton();
-        jRadioButton14 = new javax.swing.JRadioButton();
-        jRadioButton15 = new javax.swing.JRadioButton();
-        jRadioButton16 = new javax.swing.JRadioButton();
+        ensino = new javax.swing.JRadioButton();
+        pesquisa = new javax.swing.JRadioButton();
+        empresas = new javax.swing.JRadioButton();
+        profissional = new javax.swing.JRadioButton();
+        outros = new javax.swing.JRadioButton();
         jLabel24 = new javax.swing.JLabel();
-        jRadioButton17 = new javax.swing.JRadioButton();
-        jRadioButton18 = new javax.swing.JRadioButton();
+        sim = new javax.swing.JRadioButton();
+        nao = new javax.swing.JRadioButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jRadioButton19 = new javax.swing.JRadioButton();
-        jRadioButton20 = new javax.swing.JRadioButton();
+        s = new javax.swing.JRadioButton();
+        n = new javax.swing.JRadioButton();
         id_producao_field = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
         titulo_2_field = new javax.swing.JTextField();
         ano_field = new javax.swing.JTextField();
         autores_field = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
-        jRadioButton21 = new javax.swing.JRadioButton();
-        jRadioButton22 = new javax.swing.JRadioButton();
+        ss = new javax.swing.JRadioButton();
+        nn = new javax.swing.JRadioButton();
         jLabel31 = new javax.swing.JLabel();
-        jRadioButton23 = new javax.swing.JRadioButton();
-        jRadioButton24 = new javax.swing.JRadioButton();
-        jRadioButton25 = new javax.swing.JRadioButton();
-        jRadioButton27 = new javax.swing.JRadioButton();
-        jRadioButton28 = new javax.swing.JRadioButton();
+        artistica = new javax.swing.JRadioButton();
+        bibliografica = new javax.swing.JRadioButton();
+        tecnica = new javax.swing.JRadioButton();
+        jornal = new javax.swing.JRadioButton();
+        periodico = new javax.swing.JRadioButton();
         jLabel33 = new javax.swing.JLabel();
         noticia_field = new javax.swing.JTextField();
         inicial_field = new javax.swing.JTextField();
@@ -193,19 +193,19 @@ public class Pag5 extends javax.swing.JFrame {
 
         jLabel5.setText("Tipo:");
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("Dissertação");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(dissertacao);
+        dissertacao.setText("Dissertação");
+        dissertacao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                dissertacaoActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("Tese");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(tese);
+        tese.setText("Tese");
+        tese.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                teseActionPerformed(evt);
             }
         });
 
@@ -223,16 +223,21 @@ public class Pag5 extends javax.swing.JFrame {
 
         jLabel13.setText("Nº Páginas:");
 
-        buttonGroup2.add(jRadioButton3);
-        jRadioButton3.setText("Português");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup2.add(pt);
+        pt.setText("Português");
+        pt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                ptActionPerformed(evt);
             }
         });
 
-        buttonGroup2.add(jRadioButton4);
-        jRadioButton4.setText("Inglês");
+        buttonGroup2.add(ing);
+        ing.setText("Inglês");
+        ing.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ingActionPerformed(evt);
+            }
+        });
 
         jLabel14.setText("Idioma:");
 
@@ -250,121 +255,121 @@ public class Pag5 extends javax.swing.JFrame {
 
         jLabel21.setText("Tipo de Vínculo Empregatício:");
 
-        buttonGroup3.add(jRadioButton5);
-        jRadioButton5.setText("Servidor Público");
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(servidor);
+        servidor.setText("Servidor Público");
+        servidor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
+                servidorActionPerformed(evt);
             }
         });
 
-        buttonGroup3.add(jRadioButton6);
-        jRadioButton6.setText("CLT");
-        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(clt);
+        clt.setText("CLT");
+        clt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton6ActionPerformed(evt);
+                cltActionPerformed(evt);
             }
         });
 
-        buttonGroup3.add(jRadioButton7);
-        jRadioButton7.setText("Pessoa Jurídica");
-        jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(juridica);
+        juridica.setText("Pessoa Jurídica");
+        juridica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton7ActionPerformed(evt);
+                juridicaActionPerformed(evt);
             }
         });
 
         jLabel22.setText("Tipo de Instituição:");
 
-        buttonGroup4.add(jRadioButton8);
-        jRadioButton8.setText("Pública");
-        jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(publica);
+        publica.setText("Pública");
+        publica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton8ActionPerformed(evt);
+                publicaActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jRadioButton9);
-        jRadioButton9.setText("Privada");
-        jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(privada);
+        privada.setText("Privada");
+        privada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton9ActionPerformed(evt);
+                privadaActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jRadioButton10);
-        jRadioButton10.setText("Instituição de Ensino e Pesquisa");
-        jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(inst);
+        inst.setText("Instituição de Ensino e Pesquisa");
+        inst.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton10ActionPerformed(evt);
+                instActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jRadioButton11);
-        jRadioButton11.setText("Outros");
-        jRadioButton11.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(outros_2);
+        outros_2.setText("Outros");
+        outros_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton11ActionPerformed(evt);
+                outros_2ActionPerformed(evt);
             }
         });
 
         jLabel23.setText("Expectativa de Atuação:");
 
-        buttonGroup5.add(jRadioButton12);
-        jRadioButton12.setText("Ensino e Pesquisa");
-        jRadioButton12.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup5.add(ensino);
+        ensino.setText("Ensino e Pesquisa");
+        ensino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton12ActionPerformed(evt);
+                ensinoActionPerformed(evt);
             }
         });
 
-        buttonGroup5.add(jRadioButton13);
-        jRadioButton13.setText("Pesquisa");
-        jRadioButton13.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup5.add(pesquisa);
+        pesquisa.setText("Pesquisa");
+        pesquisa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton13ActionPerformed(evt);
+                pesquisaActionPerformed(evt);
             }
         });
 
-        buttonGroup5.add(jRadioButton14);
-        jRadioButton14.setText("Empresas");
-        jRadioButton14.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup5.add(empresas);
+        empresas.setText("Empresas");
+        empresas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton14ActionPerformed(evt);
+                empresasActionPerformed(evt);
             }
         });
 
-        buttonGroup5.add(jRadioButton15);
-        jRadioButton15.setText("Profissional Autônomo");
-        jRadioButton15.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup5.add(profissional);
+        profissional.setText("Profissional Autônomo");
+        profissional.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton15ActionPerformed(evt);
+                profissionalActionPerformed(evt);
             }
         });
 
-        buttonGroup5.add(jRadioButton16);
-        jRadioButton16.setText("Outros");
-        jRadioButton16.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup5.add(outros);
+        outros.setText("Outros");
+        outros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton16ActionPerformed(evt);
+                outrosActionPerformed(evt);
             }
         });
 
         jLabel24.setText("Mesma Área de Atuação: ");
 
-        buttonGroup6.add(jRadioButton17);
-        jRadioButton17.setText("Sim");
-        jRadioButton17.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup6.add(sim);
+        sim.setText("Sim");
+        sim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton17ActionPerformed(evt);
+                simActionPerformed(evt);
             }
         });
 
-        buttonGroup6.add(jRadioButton18);
-        jRadioButton18.setText("Não");
-        jRadioButton18.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup6.add(nao);
+        nao.setText("Não");
+        nao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton18ActionPerformed(evt);
+                naoActionPerformed(evt);
             }
         });
 
@@ -379,19 +384,19 @@ public class Pag5 extends javax.swing.JFrame {
 
         jLabel26.setText("Vinculada a Trabalho de Conclusão:");
 
-        buttonGroup7.add(jRadioButton19);
-        jRadioButton19.setText("Sim");
-        jRadioButton19.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup7.add(s);
+        s.setText("Sim");
+        s.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton19ActionPerformed(evt);
+                sActionPerformed(evt);
             }
         });
 
-        buttonGroup7.add(jRadioButton20);
-        jRadioButton20.setText("Não");
-        jRadioButton20.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup7.add(n);
+        n.setText("Não");
+        n.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton20ActionPerformed(evt);
+                nActionPerformed(evt);
             }
         });
 
@@ -399,61 +404,61 @@ public class Pag5 extends javax.swing.JFrame {
 
         jLabel30.setText("É o mais Relevante:");
 
-        buttonGroup8.add(jRadioButton21);
-        jRadioButton21.setText("Sim");
-        jRadioButton21.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup8.add(ss);
+        ss.setText("Sim");
+        ss.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton21ActionPerformed(evt);
+                ssActionPerformed(evt);
             }
         });
 
-        buttonGroup8.add(jRadioButton22);
-        jRadioButton22.setText("Não");
-        jRadioButton22.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup8.add(nn);
+        nn.setText("Não");
+        nn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton22ActionPerformed(evt);
+                nnActionPerformed(evt);
             }
         });
 
         jLabel31.setText("Tipo:");
 
-        buttonGroup9.add(jRadioButton23);
-        jRadioButton23.setText("Artística");
-        jRadioButton23.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup9.add(artistica);
+        artistica.setText("Artística");
+        artistica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton23ActionPerformed(evt);
+                artisticaActionPerformed(evt);
             }
         });
 
-        buttonGroup9.add(jRadioButton24);
-        jRadioButton24.setText("Bibliografica");
-        jRadioButton24.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup9.add(bibliografica);
+        bibliografica.setText("Bibliografica");
+        bibliografica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton24ActionPerformed(evt);
+                bibliograficaActionPerformed(evt);
             }
         });
 
-        buttonGroup9.add(jRadioButton25);
-        jRadioButton25.setText("Técnica");
-        jRadioButton25.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup9.add(tecnica);
+        tecnica.setText("Técnica");
+        tecnica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton25ActionPerformed(evt);
+                tecnicaActionPerformed(evt);
             }
         });
 
-        buttonGroup10.add(jRadioButton27);
-        jRadioButton27.setText("Artigo em jornal ou pesquisa");
-        jRadioButton27.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup10.add(jornal);
+        jornal.setText("Artigo em jornal ou pesquisa");
+        jornal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton27ActionPerformed(evt);
+                jornalActionPerformed(evt);
             }
         });
 
-        buttonGroup10.add(jRadioButton28);
-        jRadioButton28.setText("Artigo em Periódico");
-        jRadioButton28.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup10.add(periodico);
+        periodico.setText("Artigo em Periódico");
+        periodico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton28ActionPerformed(evt);
+                periodicoActionPerformed(evt);
             }
         });
 
@@ -517,15 +522,15 @@ public class Pag5 extends javax.swing.JFrame {
                                             .addComponent(jLabel23)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jRadioButton12)
-                                                .addComponent(jRadioButton15))
+                                                .addComponent(ensino)
+                                                .addComponent(profissional))
                                             .addGap(29, 29, 29)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jRadioButton16)
+                                                .addComponent(outros)
                                                 .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(jRadioButton13)
+                                                    .addComponent(pesquisa)
                                                     .addGap(43, 43, 43)
-                                                    .addComponent(jRadioButton14)))))))
+                                                    .addComponent(empresas)))))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(126, 126, 126)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -541,9 +546,9 @@ public class Pag5 extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(resumo_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jRadioButton1)
+                                                .addComponent(dissertacao)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(jRadioButton2))))))
+                                                .addComponent(tese))))))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -594,21 +599,21 @@ public class Pag5 extends javax.swing.JFrame {
                                     .addComponent(palavra_chave_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(keywords_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jRadioButton3)
+                                        .addComponent(pt)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jRadioButton4))
+                                        .addComponent(ing))
                                     .addComponent(projeto_pesquisa_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(56, 56, 56)
                                 .addComponent(jLabel22)
                                 .addGap(18, 18, 18)
-                                .addComponent(jRadioButton8)
+                                .addComponent(publica)
                                 .addGap(18, 18, 18)
-                                .addComponent(jRadioButton9)
+                                .addComponent(privada)
                                 .addGap(34, 34, 34)
-                                .addComponent(jRadioButton10)
+                                .addComponent(inst)
                                 .addGap(18, 18, 18)
-                                .addComponent(jRadioButton11))))
+                                .addComponent(outros_2))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1))
@@ -645,11 +650,11 @@ public class Pag5 extends javax.swing.JFrame {
                                     .addComponent(ano_field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(autores_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jRadioButton23)
+                                        .addComponent(artistica)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jRadioButton24)
+                                        .addComponent(bibliografica)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton25))
+                                        .addComponent(tecnica))
                                     .addComponent(noticia_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(area_conc_2_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(51, 51, 51)
@@ -674,21 +679,21 @@ public class Pag5 extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel26)
                                         .addGap(24, 24, 24)
-                                        .addComponent(jRadioButton19)
+                                        .addComponent(s)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton20))
+                                        .addComponent(n))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel30)
                                         .addGap(24, 24, 24)
-                                        .addComponent(jRadioButton21)
+                                        .addComponent(ss)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton22))
+                                        .addComponent(nn))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel33)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton27)
+                                        .addComponent(jornal)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton28))))
+                                        .addComponent(periodico))))
                             .addComponent(projeto_pesquisa_2_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(641, 641, 641)
@@ -700,17 +705,17 @@ public class Pag5 extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel24)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton17)
+                                        .addComponent(sim)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton18))
+                                        .addComponent(nao))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(3, 3, 3)
-                                        .addComponent(jRadioButton5)
+                                        .addComponent(servidor)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jRadioButton6)
+                                        .addComponent(clt)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton7))))
+                                        .addComponent(juridica))))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton1)))))
@@ -734,8 +739,8 @@ public class Pag5 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2))
+                            .addComponent(dissertacao)
+                            .addComponent(tese))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(resumo_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -787,8 +792,8 @@ public class Pag5 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel14)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton4))
+                            .addComponent(pt)
+                            .addComponent(ing))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel17)
@@ -800,9 +805,9 @@ public class Pag5 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jRadioButton5)
-                            .addComponent(jRadioButton7)
-                            .addComponent(jRadioButton6))))
+                            .addComponent(servidor)
+                            .addComponent(juridica)
+                            .addComponent(clt))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -810,23 +815,23 @@ public class Pag5 extends javax.swing.JFrame {
                             .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jRadioButton12)
-                                    .addComponent(jRadioButton13)
-                                    .addComponent(jRadioButton14)
+                                    .addComponent(ensino)
+                                    .addComponent(pesquisa)
+                                    .addComponent(empresas)
                                     .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton8)
-                                    .addComponent(jRadioButton9)
-                                    .addComponent(jRadioButton10)
-                                    .addComponent(jRadioButton11))
+                                    .addComponent(publica)
+                                    .addComponent(privada)
+                                    .addComponent(inst)
+                                    .addComponent(outros_2))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jRadioButton17)
-                                        .addComponent(jRadioButton18))
+                                        .addComponent(sim)
+                                        .addComponent(nao))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jRadioButton16)
-                                        .addComponent(jRadioButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(outros)
+                                        .addComponent(profissional, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel12)
                         .addGap(8, 8, 8)
@@ -835,9 +840,9 @@ public class Pag5 extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jRadioButton25)
-                                            .addComponent(jRadioButton24))
-                                        .addComponent(jRadioButton23))
+                                            .addComponent(tecnica)
+                                            .addComponent(bibliografica))
+                                        .addComponent(artistica))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -875,19 +880,19 @@ public class Pag5 extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(ano_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton19)
-                                    .addComponent(jRadioButton20))
+                                    .addComponent(s)
+                                    .addComponent(n))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(autores_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton21)
-                                    .addComponent(jRadioButton22))
+                                    .addComponent(ss)
+                                    .addComponent(nn))
                                 .addGap(1, 1, 1)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel33)
-                                    .addComponent(jRadioButton27)
-                                    .addComponent(jRadioButton28))
+                                    .addComponent(jornal)
+                                    .addComponent(periodico))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -911,109 +916,161 @@ public class Pag5 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    private void dissertacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dissertacaoActionPerformed
+        if(dissertacao.isSelected()){
+            this.tipo_tcc = "Dissertação";
+        }
+    }//GEN-LAST:event_dissertacaoActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    private void teseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teseActionPerformed
+        if(tese.isSelected()){
+            this.tipo_tcc = "Tese";
+        }
+    }//GEN-LAST:event_teseActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    private void ptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ptActionPerformed
+        if(pt.isSelected()){
+            this.idioma = "Português";
+        }
+    }//GEN-LAST:event_ptActionPerformed
 
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
+    private void servidorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_servidorActionPerformed
+        if(servidor.isSelected()){
+            this.tipo_vinc = "Servidor Público";
+        }
+    }//GEN-LAST:event_servidorActionPerformed
 
-    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton6ActionPerformed
+    private void cltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cltActionPerformed
+        if(clt.isSelected()){
+            this.tipo_vinc = "CLT";
+        }
+    }//GEN-LAST:event_cltActionPerformed
 
-    private void jRadioButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton7ActionPerformed
+    private void juridicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_juridicaActionPerformed
+        if(juridica.isSelected()){
+            this.tipo_vinc = "Pessoa Jurídica";
+        }
+    }//GEN-LAST:event_juridicaActionPerformed
 
-    private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton8ActionPerformed
+    private void publicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_publicaActionPerformed
+        if(publica.isSelected()){
+            this.tipo_instituicao = "Pública";
+        }
+    }//GEN-LAST:event_publicaActionPerformed
 
-    private void jRadioButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton9ActionPerformed
+    private void privadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_privadaActionPerformed
+        if(privada.isSelected()){
+            this.tipo_instituicao = "Privada";
+        }
+    }//GEN-LAST:event_privadaActionPerformed
 
-    private void jRadioButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton10ActionPerformed
+    private void instActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instActionPerformed
+        if(inst.isSelected()){
+            this.tipo_instituicao = "Instituição de ensino e pesquisa";
+        }
+    }//GEN-LAST:event_instActionPerformed
 
-    private void jRadioButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton12ActionPerformed
+    private void ensinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ensinoActionPerformed
+        if(ensino.isSelected()){
+            this.expectativa = "Ensino e Pesquisa";
+        }
+    }//GEN-LAST:event_ensinoActionPerformed
 
-    private void jRadioButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton13ActionPerformed
+    private void pesquisaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisaActionPerformed
+        if(pesquisa.isSelected()){
+            this.expectativa = "Pesquisa";
+        }
+    }//GEN-LAST:event_pesquisaActionPerformed
 
-    private void jRadioButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton14ActionPerformed
+    private void empresasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empresasActionPerformed
+        if(empresas.isSelected()){
+            this.expectativa = "Empresas";
+        }
+    }//GEN-LAST:event_empresasActionPerformed
 
-    private void jRadioButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton15ActionPerformed
+    private void profissionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profissionalActionPerformed
+        if(profissional.isSelected()){
+            this.expectativa = "Profissional Autônomo";
+        }
+    }//GEN-LAST:event_profissionalActionPerformed
 
-    private void jRadioButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton16ActionPerformed
+    private void outrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outrosActionPerformed
+        if(outros.isSelected()){
+            this.expectativa = "Outros";
+        }
+    }//GEN-LAST:event_outrosActionPerformed
 
-    private void jRadioButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton17ActionPerformed
+    private void simActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simActionPerformed
+        if(sim.isSelected()){
+            this.mesma_area = "Sim";
+        }
+    }//GEN-LAST:event_simActionPerformed
 
-    private void jRadioButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton18ActionPerformed
+    private void naoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_naoActionPerformed
+        if(nao.isSelected()){
+            this.mesma_area = "Não";
+        }
+    }//GEN-LAST:event_naoActionPerformed
 
-    private void jRadioButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton19ActionPerformed
+    private void sActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sActionPerformed
+        if(s.isSelected()){
+            this.vtc = "Sim";
+        }
+    }//GEN-LAST:event_sActionPerformed
 
-    private void jRadioButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton20ActionPerformed
+    private void nActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nActionPerformed
+        if(n.isSelected()){
+            this.vtc = "Não";
+        }
+    }//GEN-LAST:event_nActionPerformed
 
-    private void jRadioButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton21ActionPerformed
+    private void ssActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ssActionPerformed
+        if(ss.isSelected()){
+            this.relevante = "Sim";
+        }
+    }//GEN-LAST:event_ssActionPerformed
 
-    private void jRadioButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton22ActionPerformed
+    private void nnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nnActionPerformed
+        if(nn.isSelected()){
+            this.relevante = "Não";
+        }
+    }//GEN-LAST:event_nnActionPerformed
 
-    private void jRadioButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton23ActionPerformed
+    private void artisticaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_artisticaActionPerformed
+        if(artistica.isSelected()){
+            this.tipo = "Artistica";
+        }
+    }//GEN-LAST:event_artisticaActionPerformed
 
-    private void jRadioButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton24ActionPerformed
+    private void bibliograficaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bibliograficaActionPerformed
+        if(bibliografica.isSelected()){
+            this.tipo = "Bibliográfica";
+        }
+    }//GEN-LAST:event_bibliograficaActionPerformed
 
-    private void jRadioButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton25ActionPerformed
+    private void tecnicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tecnicaActionPerformed
+        if(tecnica.isSelected()){
+            this.tipo = "Técnica";
+        }
+    }//GEN-LAST:event_tecnicaActionPerformed
 
-    private void jRadioButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton27ActionPerformed
+    private void jornalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jornalActionPerformed
+        if(jornal.isSelected()){
+            this.subtipo = "Artigo em jornal ou pesquisa";
+        }
+    }//GEN-LAST:event_jornalActionPerformed
 
-    private void jRadioButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton28ActionPerformed
+    private void periodicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_periodicoActionPerformed
+        if(periodico.isSelected()){
+            this.subtipo = "Artigo em periódico";
+        }
+    }//GEN-LAST:event_periodicoActionPerformed
 
-    private void jRadioButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton11ActionPerformed
+    private void outros_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outros_2ActionPerformed
+        if(outros_2.isSelected()){
+            this.tipo_instituicao = "Outros";
+        }
+    }//GEN-LAST:event_outros_2ActionPerformed
 
     private void doi_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doi_fieldActionPerformed
         // TODO add your handling code here:
@@ -1048,6 +1105,12 @@ public class Pag5 extends javax.swing.JFrame {
         this.linha_pesquisa_2 = linha_pesquisa_2_field.getText();
         this.projeto_pesquisa_2 = projeto_pesquisa_2_field.getText();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void ingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingActionPerformed
+        if(ing.isSelected()){
+            this.idioma = "Inglês";
+        }
+    }//GEN-LAST:event_ingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1090,8 +1153,10 @@ public class Pag5 extends javax.swing.JFrame {
     private javax.swing.JTextField ano_field;
     private javax.swing.JTextField area_conc_2_field;
     private javax.swing.JTextField area_conc_field;
+    private javax.swing.JRadioButton artistica;
     private javax.swing.JTextField autor_field;
     private javax.swing.JTextField autores_field;
+    private javax.swing.JRadioButton bibliografica;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup10;
     private javax.swing.ButtonGroup buttonGroup11;
@@ -1103,14 +1168,20 @@ public class Pag5 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup7;
     private javax.swing.ButtonGroup buttonGroup8;
     private javax.swing.ButtonGroup buttonGroup9;
+    private javax.swing.JRadioButton clt;
     private javax.swing.JTextField data_defesa_field;
+    private javax.swing.JRadioButton dissertacao;
     private javax.swing.JTextField doi_field;
+    private javax.swing.JRadioButton empresas;
+    private javax.swing.JRadioButton ensino;
     private javax.swing.JTextField final_field;
     private javax.swing.JTextField financiador_field;
     private javax.swing.JTextField id_discente_field;
     private javax.swing.JTextField id_financiador_field;
     private javax.swing.JTextField id_producao_field;
+    private javax.swing.JRadioButton ing;
     private javax.swing.JTextField inicial_field;
+    private javax.swing.JRadioButton inst;
     private javax.swing.JTextField issn_field;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -1155,44 +1226,36 @@ public class Pag5 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton11;
-    private javax.swing.JRadioButton jRadioButton12;
-    private javax.swing.JRadioButton jRadioButton13;
-    private javax.swing.JRadioButton jRadioButton14;
-    private javax.swing.JRadioButton jRadioButton15;
-    private javax.swing.JRadioButton jRadioButton16;
-    private javax.swing.JRadioButton jRadioButton17;
-    private javax.swing.JRadioButton jRadioButton18;
-    private javax.swing.JRadioButton jRadioButton19;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton20;
-    private javax.swing.JRadioButton jRadioButton21;
-    private javax.swing.JRadioButton jRadioButton22;
-    private javax.swing.JRadioButton jRadioButton23;
-    private javax.swing.JRadioButton jRadioButton24;
-    private javax.swing.JRadioButton jRadioButton25;
-    private javax.swing.JRadioButton jRadioButton27;
-    private javax.swing.JRadioButton jRadioButton28;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JRadioButton jRadioButton9;
+    private javax.swing.JRadioButton jornal;
+    private javax.swing.JRadioButton juridica;
     private javax.swing.JTextField keywords_field;
     private javax.swing.JTextField linha_pesquisa_2_field;
     private javax.swing.JTextField linha_pesquisa_field;
     private javax.swing.JTextField membros_field;
+    private javax.swing.JRadioButton n;
+    private javax.swing.JRadioButton nao;
+    private javax.swing.JRadioButton nn;
     private javax.swing.JTextField noticia_field;
     private javax.swing.JTextField orientador_field;
+    private javax.swing.JRadioButton outros;
+    private javax.swing.JRadioButton outros_2;
     private javax.swing.JTextField paginas_field;
     private javax.swing.JTextField palavra_chave_field;
+    private javax.swing.JRadioButton periodico;
+    private javax.swing.JRadioButton pesquisa;
+    private javax.swing.JRadioButton privada;
+    private javax.swing.JRadioButton profissional;
     private javax.swing.JTextField projeto_pesquisa_2_field;
     private javax.swing.JTextField projeto_pesquisa_field;
+    private javax.swing.JRadioButton pt;
+    private javax.swing.JRadioButton publica;
     private javax.swing.JTextField resumo_field;
+    private javax.swing.JRadioButton s;
+    private javax.swing.JRadioButton servidor;
+    private javax.swing.JRadioButton sim;
+    private javax.swing.JRadioButton ss;
+    private javax.swing.JRadioButton tecnica;
+    private javax.swing.JRadioButton tese;
     private javax.swing.JTextField titulo_2_field;
     private javax.swing.JTextField titulo_field;
     private javax.swing.JTextField url_field;
