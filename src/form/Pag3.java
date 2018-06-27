@@ -5,6 +5,10 @@
  */
 package form;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+
 /**
  *
  * @author luci
@@ -16,6 +20,22 @@ public class Pag3 extends javax.swing.JFrame {
      */
     Pag1 pag1_elementos;
     Pag2 pag2_elementos;
+    private JComboBox<Object> tipoDocumento_cbox;
+    private JTextField numDocumento_field;
+    private JTextField nascimento_field;
+    private JComboBox<Object> sexo_field;
+    private JTextField nacionalidade_field;
+    private JComboBox<Object> nivel_cbox;
+    private JComboBox<Object> situacao_cbox;
+    private JTextField matricula_field;
+    private JTextField orientador_field;
+    private JButton proximo_button;
+    private JButton voltar_button;
+    private JTextField nome_field;
+    private Object jComboBox4;
+    private Object id_discente_field;
+    private Object numero_documento_field;
+    private Object data_nascimento_field;
     
     public Pag3(Pag1 pag1_elementos, Pag2 pag2_elementos) {
         this.pag1_elementos = pag1_elementos;
@@ -88,12 +108,13 @@ public class Pag3 extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         PBTC_field = new javax.swing.JTextField();
 
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1200, 768));
 
         jLabel1.setText("ID Discente:");
 
-        jLabel2.setText("Tipo de Documento");
+        jLabel2.setText("Tipo de Documento:");
 
         tipoDocumento_cbox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CPF", "RG", "Passaporte" }));
         tipoDocumento_cbox.addActionListener(new java.awt.event.ActionListener() {
@@ -120,11 +141,18 @@ public class Pag3 extends javax.swing.JFrame {
 
         jLabel5.setText("Sexo");
 
+        jLabel3.setText("Número do Documento:");
+
+        jLabel4.setText("Data de Nascimento:");
+
+        jLabel5.setText("Sexo:");
+
+
         sexo_field.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel6.setText("Nacionalidade");
-
         jLabel7.setText("Pessoa com Deficiência");
+
 
         deficiencia_cbox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Não", "Sim" }));
 
@@ -132,7 +160,16 @@ public class Pag3 extends javax.swing.JFrame {
 
         jLabel9.setText("Nível");
 
+
         nivel_cbox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox4ActionPerformed(evt);
+            }
+        });
+
 
         jLabel10.setText("Situação");
 
@@ -190,6 +227,22 @@ public class Pag3 extends javax.swing.JFrame {
 
         jLabel30.setText("Participação em Bancas de Trabalho de Conclusão (IDs Bancas):");
 
+        id_discente_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        numero_documento_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        jLabel29.setText("Nome:");
+
+        nome_field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nome_fieldActionPerformed(evt);
+            }
+        });
+
+        data_nascimento_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        jLabel30.setText("Nome Social:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -200,6 +253,7 @@ public class Pag3 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -328,6 +382,8 @@ public class Pag3 extends javax.swing.JFrame {
                     .addComponent(PPP_field, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(PPI_field, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
+
+
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -339,6 +395,7 @@ public class Pag3 extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(id_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
+
                     .addComponent(numDocumento_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tipoDocumento_cbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -363,10 +420,12 @@ public class Pag3 extends javax.swing.JFrame {
                     .addComponent(email_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nivel_cbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
                     .addComponent(jLabel10)
+
                     .addComponent(situacao_cbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -384,12 +443,15 @@ public class Pag3 extends javax.swing.JFrame {
                     .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+
+
                     .addComponent(jLabel17)
                     .addComponent(dataFimCoOrientacao_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(dataInicioCoOrientacao_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+
                     .addComponent(bolsa_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -411,6 +473,8 @@ public class Pag3 extends javax.swing.JFrame {
                     .addComponent(PBTC_field, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel30))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+
+
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(voltar_button)
                     .addComponent(proximo_button))
@@ -436,13 +500,21 @@ public class Pag3 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_numDocumento_fieldActionPerformed
 
-    private void nome_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_fieldActionPerformed
+    private void nome_fieldActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }//GEN-LAST:event_nome_fieldActionPerformed
+    }                                          
 
     private void id_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_fieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_id_fieldActionPerformed
+
+    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox4ActionPerformed
+
+    private void nome_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_fieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nome_fieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -482,7 +554,8 @@ public class Pag3 extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
+
     private javax.swing.JTextField PBTC_field;
     private javax.swing.JTextField PPI_field;
     private javax.swing.JTextField PPP_field;
@@ -497,6 +570,7 @@ public class Pag3 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> deficiencia_cbox;
     private javax.swing.JTextField email_field;
     private javax.swing.JTextField id_field;
+
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -522,17 +596,4 @@ public class Pag3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField matricula_field;
-    private javax.swing.JTextField nacionalidade_field;
-    private javax.swing.JTextField nascimento_field;
-    private javax.swing.JComboBox<String> nivel_cbox;
-    private javax.swing.JTextField nome_field;
-    private javax.swing.JTextField numDocumento_field;
-    private javax.swing.JTextField orientador_field;
-    private javax.swing.JButton proximo_button;
-    private javax.swing.JComboBox<String> sexo_field;
-    private javax.swing.JComboBox<String> situacao_cbox;
-    private javax.swing.JComboBox<String> tipoDocumento_cbox;
-    private javax.swing.JButton voltar_button;
-    // End of variables declaration//GEN-END:variables
-}
+

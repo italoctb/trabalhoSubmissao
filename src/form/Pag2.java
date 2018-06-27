@@ -63,10 +63,8 @@ public class Pag2 extends javax.swing.JFrame {
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
-        id_professor_field = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        numero_documento_field = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         passaporte = new javax.swing.JRadioButton();
         rg = new javax.swing.JRadioButton();
@@ -76,7 +74,6 @@ public class Pag2 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         nome_social_field = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        data_nascimento_field = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         masculino = new javax.swing.JRadioButton();
         feminino = new javax.swing.JRadioButton();
@@ -95,7 +92,6 @@ public class Pag2 extends javax.swing.JFrame {
         mestrado = new javax.swing.JRadioButton();
         doutorado = new javax.swing.JRadioButton();
         jLabel14 = new javax.swing.JLabel();
-        ano_tit_field = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         pais_tit_field = new javax.swing.JTextField();
         instituicao_tit_field = new javax.swing.JTextField();
@@ -111,23 +107,32 @@ public class Pag2 extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         permanente = new javax.swing.JRadioButton();
         colaborador = new javax.swing.JRadioButton();
-        carga_horaria_sem_field = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        data_inicio_vinc_field = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
-        data_fim_vinc_field = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        PPP_field = new javax.swing.JTextField();
-        PPI_field = new javax.swing.JTextField();
-        PBTC_field = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         b2 = new javax.swing.JButton();
+        id_professor_field = new javax.swing.JFormattedTextField();
+        numero_documento_field = new javax.swing.JFormattedTextField();
+        data_nascimento_field = new javax.swing.JFormattedTextField();
+        ano_tit_field = new javax.swing.JFormattedTextField();
+        data_fim_vinc_field = new javax.swing.JFormattedTextField();
+        data_inicio_vinc_field = new javax.swing.JFormattedTextField();
+        carga_horaria_sem_field = new javax.swing.JFormattedTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        PPP_field = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        PPI_field = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        PBTC_field = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/settings.png")); // NOI18N
         jLabel1.setText("Cadastro de Professores");
 
         jLabel2.setText("ID Professor:");
@@ -318,6 +323,8 @@ public class Pag2 extends javax.swing.JFrame {
 
         jLabel25.setText("Participação em Bancas de Trabalho de Conclusão (IDs Bancas):");
 
+        jButton1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/left-arrow.png")); // NOI18N
         jButton1.setText("Voltar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -325,12 +332,41 @@ public class Pag2 extends javax.swing.JFrame {
             }
         });
 
+        b2.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        b2.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/right-arrow.png")); // NOI18N
         b2.setText("Próximo");
+        b2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         b2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b2ActionPerformed(evt);
             }
         });
+
+        id_professor_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        numero_documento_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        data_nascimento_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        ano_tit_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        data_fim_vinc_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter()));
+
+        data_inicio_vinc_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        carga_horaria_sem_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        PPP_field.setColumns(20);
+        PPP_field.setRows(5);
+        jScrollPane1.setViewportView(PPP_field);
+
+        PPI_field.setColumns(20);
+        PPI_field.setRows(5);
+        jScrollPane2.setViewportView(PPI_field);
+
+        PBTC_field.setColumns(20);
+        PBTC_field.setRows(5);
+        jScrollPane3.setViewportView(PBTC_field);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -357,16 +393,6 @@ public class Pag2 extends javax.swing.JFrame {
                         .addGap(6, 6, 6)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(carga_horaria_sem_field, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel21)
-                                .addGap(3, 3, 3)
-                                .addComponent(data_inicio_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel22)
-                                .addGap(3, 3, 3)
-                                .addComponent(data_fim_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(instituicao_tit_field)
@@ -377,8 +403,8 @@ public class Pag2 extends javax.swing.JFrame {
                                             .addGap(3, 3, 3)
                                             .addComponent(email_field, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(id_professor_field, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(28, 28, 28)
+                                            .addComponent(id_professor_field, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(36, 36, 36)
                                             .addComponent(jLabel3)
                                             .addGap(2, 2, 2)
                                             .addComponent(numero_documento_field, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -386,18 +412,23 @@ public class Pag2 extends javax.swing.JFrame {
                                         .addComponent(nome_social_field)
                                         .addComponent(instituicao_origem_field))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(pais_tit_field, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel14))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(237, 237, 237)
-                                        .addComponent(ano_tit_field, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel19)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(pais_tit_field, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jLabel14)
+                                                .addGap(4, 4, 4)
+                                                .addComponent(ano_tit_field, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(4, 4, 4)
+                                                .addComponent(jLabel19))
+                                            .addComponent(carga_horaria_sem_field, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(2, 2, 2)
-                                        .addComponent(colaborador)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(permanente)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(data_inicio_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(colaborador)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(permanente)))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -409,20 +440,19 @@ public class Pag2 extends javax.swing.JFrame {
                                                     .addGap(6, 6, 6)
                                                     .addComponent(masculino))
                                                 .addComponent(jLabel7)))
+                                        .addGap(3, 3, 3)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addGap(3, 3, 3)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(data_nascimento_field, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(passaporte)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(rg)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(cpf))))
-                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(passaporte)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(feminino))))
+                                                .addComponent(rg)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cpf))
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addComponent(data_nascimento_field, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                    .addGap(9, 9, 9)
+                                                    .addComponent(feminino)))))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel13)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -449,30 +479,40 @@ public class Pag2 extends javax.swing.JFrame {
                                         .addComponent(clt)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(juridica))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(b2)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel18)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(exclusiva)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(vinteH)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(quarentaH)))))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(exclusiva)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(vinteH)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(b2)
+                                            .addComponent(quarentaH)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(119, 119, 119)
+                                .addComponent(jLabel21)
+                                .addGap(118, 118, 118)
+                                .addComponent(jLabel22)
+                                .addGap(3, 3, 3)
+                                .addComponent(data_fim_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel23)
-                                    .addComponent(jLabel24)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(68, 68, 68)
+                                            .addComponent(jLabel23))
+                                        .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.TRAILING))
                                     .addComponent(jLabel25))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(PPP_field)
-                                    .addComponent(PPI_field)
-                                    .addComponent(PBTC_field, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING)))
                             .addComponent(jButton1))))
                 .addContainerGap(331, Short.MAX_VALUE))
         );
@@ -483,21 +523,22 @@ public class Pag2 extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(id_professor_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
-                    .addComponent(numero_documento_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
                     .addComponent(passaporte)
                     .addComponent(rg)
-                    .addComponent(cpf))
+                    .addComponent(cpf)
+                    .addComponent(id_professor_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(numero_documento_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel7)
+                        .addComponent(data_nascimento_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(nome_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel5)
-                        .addComponent(data_nascimento_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel5)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -542,35 +583,38 @@ public class Pag2 extends javax.swing.JFrame {
                     .addComponent(jLabel15)
                     .addComponent(pais_tit_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel14)
-                    .addComponent(ano_tit_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
                     .addComponent(colaborador)
-                    .addComponent(permanente))
+                    .addComponent(permanente)
+                    .addComponent(ano_tit_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(carga_horaria_sem_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20)
                     .addComponent(jLabel21)
-                    .addComponent(data_inicio_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel22)
-                    .addComponent(data_fim_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(data_fim_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(data_inicio_vinc_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(carga_horaria_sem_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel23)
-                    .addComponent(PPP_field, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel23))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PPI_field, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PBTC_field, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(b2))
-                .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton1)
+                            .addComponent(b2))
+                        .addGap(49, 49, 49))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -764,28 +808,28 @@ public class Pag2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField PBTC_field;
-    private javax.swing.JTextField PPI_field;
-    private javax.swing.JTextField PPP_field;
-    private javax.swing.JTextField ano_tit_field;
+    private javax.swing.JTextArea PBTC_field;
+    private javax.swing.JTextArea PPI_field;
+    private javax.swing.JTextArea PPP_field;
+    private javax.swing.JFormattedTextField ano_tit_field;
     private javax.swing.JButton b2;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.JTextField carga_horaria_sem_field;
+    private javax.swing.JFormattedTextField carga_horaria_sem_field;
     private javax.swing.JRadioButton clt;
     private javax.swing.JRadioButton colaborador;
     private javax.swing.JRadioButton cpf;
-    private javax.swing.JTextField data_fim_vinc_field;
-    private javax.swing.JTextField data_inicio_vinc_field;
-    private javax.swing.JTextField data_nascimento_field;
+    private javax.swing.JFormattedTextField data_fim_vinc_field;
+    private javax.swing.JFormattedTextField data_inicio_vinc_field;
+    private javax.swing.JFormattedTextField data_nascimento_field;
     private javax.swing.JRadioButton doutorado;
     private javax.swing.JTextField email_field;
     private javax.swing.JRadioButton especializacao;
     private javax.swing.JRadioButton exclusiva;
     private javax.swing.JRadioButton feminino;
     private javax.swing.JRadioButton graduacao;
-    private javax.swing.JTextField id_professor_field;
+    private javax.swing.JFormattedTextField id_professor_field;
     private javax.swing.JTextField instituicao_origem_field;
     private javax.swing.JTextField instituicao_tit_field;
     private javax.swing.JButton jButton1;
@@ -814,6 +858,9 @@ public class Pag2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JRadioButton juridica;
     private javax.swing.JRadioButton masculino;
     private javax.swing.JRadioButton mestrado;
@@ -821,7 +868,7 @@ public class Pag2 extends javax.swing.JFrame {
     private javax.swing.JRadioButton nao;
     private javax.swing.JTextField nome_field;
     private javax.swing.JTextField nome_social_field;
-    private javax.swing.JTextField numero_documento_field;
+    private javax.swing.JFormattedTextField numero_documento_field;
     private javax.swing.JTextField pais_tit_field;
     private javax.swing.JRadioButton passaporte;
     private javax.swing.JRadioButton permanente;
