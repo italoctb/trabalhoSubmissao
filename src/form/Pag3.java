@@ -164,16 +164,16 @@ public class Pag3 extends javax.swing.JFrame {
         jLabel27.setText("Data de fim da bolsa:");
 
         jLabel28.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
-        jLabel28.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/settings.png")); // NOI18N
+        jLabel28.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel28.setText("Cadastro de Discentes");
 
         jButton1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/right-arrow.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/right-arrow.png")); // NOI18N
         jButton1.setText("Próximo");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         jButton2.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/left-arrow.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/left-arrow.png")); // NOI18N
         jButton2.setText("Voltar");
 
         id_discente_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));

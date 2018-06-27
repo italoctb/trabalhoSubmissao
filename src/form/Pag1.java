@@ -113,7 +113,7 @@ public class Pag1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         sair2.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        sair2.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/left-arrow.png")); // NOI18N
+        sair2.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/left-arrow.png")); // NOI18N
         sair2.setText("Cancelar");
         sair2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +122,7 @@ public class Pag1 extends javax.swing.JFrame {
         });
 
         prox1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        prox1.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/right-arrow.png")); // NOI18N
+        prox1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/right-arrow.png")); // NOI18N
         prox1.setText("Próximo");
         prox1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         prox1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -133,7 +133,7 @@ public class Pag1 extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/settings.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel1.setText("Cadastro de Financiadores");
 
         cnpj_field.addActionListener(new java.awt.event.ActionListener() {
@@ -207,7 +207,7 @@ public class Pag1 extends javax.swing.JFrame {
         jLabel8.setText("Site:");
 
         jLabel9.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
-        jLabel9.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/settings.png")); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel9.setText("Cadastro de Programa de Fomento");
 
         jLabel10.setText("Nome:");
@@ -217,7 +217,7 @@ public class Pag1 extends javax.swing.JFrame {
         jLabel12.setText("ID Financiador:");
 
         jLabel13.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
-        jLabel13.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/settings.png")); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel13.setText("Cadastro de Área de Concentração");
 
         jLabel14.setText("Nome:");
@@ -243,7 +243,7 @@ public class Pag1 extends javax.swing.JFrame {
         jLabel18.setText("Data de Fim:");
 
         jLabel19.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
-        jLabel19.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/settings.png")); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel19.setText("Cadastro de Linha de Pesquisa");
 
         jLabel20.setText("Nome:");

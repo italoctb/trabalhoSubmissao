@@ -39,7 +39,6 @@ public class App_pageOne extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(500, 500));
-        setPreferredSize(new java.awt.Dimension(578, 500));
 
         jLabel1.setFont(new java.awt.Font("Noto Sans", 0, 36)); // NOI18N
         jLabel1.setText("Sistema de cadastro de dados");
@@ -52,7 +51,7 @@ public class App_pageOne extends javax.swing.JFrame {
         });
 
         iniciar.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        iniciar.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/checked.png")); // NOI18N
+        iniciar.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/checked.png")); // NOI18N
         iniciar.setText("Iniciar");
         iniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +59,7 @@ public class App_pageOne extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/hand.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/hand.png")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

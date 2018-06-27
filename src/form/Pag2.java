@@ -132,7 +132,7 @@ public class Pag2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/settings.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel1.setText("Cadastro de Professores");
 
         jLabel2.setText("ID Professor:");
@@ -324,7 +324,7 @@ public class Pag2 extends javax.swing.JFrame {
         jLabel25.setText("Participação em Bancas de Trabalho de Conclusão (IDs Bancas):");
 
         jButton1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/left-arrow.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/left-arrow.png")); // NOI18N
         jButton1.setText("Voltar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -333,7 +333,7 @@ public class Pag2 extends javax.swing.JFrame {
         });
 
         b2.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        b2.setIcon(new javax.swing.ImageIcon("/home/luci/Downloads/right-arrow.png")); // NOI18N
+        b2.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/right-arrow.png")); // NOI18N
         b2.setText("Próximo");
         b2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         b2.addActionListener(new java.awt.event.ActionListener() {
