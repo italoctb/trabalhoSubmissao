@@ -14,6 +14,10 @@ public class Pag5 extends javax.swing.JFrame {
     /**
      * Creates new form pag5
      */
+    Pag1 pag1_elementos;
+    Pag2 pag2_elementos;
+    Pag3 pag3_elementos;
+    Pag4 pag4_elementos;
     // Cadastro de Trabalho de Conclusão
     private String id_trabalho;
     private String titulo_1;
@@ -96,7 +100,7 @@ public class Pag5 extends javax.swing.JFrame {
         palavra_chave_field = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         abstract_field = new javax.swing.JTextField();
-        keyworlds_field = new javax.swing.JTextField();
+        keywords_field = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         paginas_field = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
@@ -480,6 +484,11 @@ public class Pag5 extends javax.swing.JFrame {
         jLabel43.setText("Projeto de Pesquisa:");
 
         jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("jButton2");
 
@@ -583,7 +592,7 @@ public class Pag5 extends javax.swing.JFrame {
                                     .addComponent(data_defesa_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(titulo_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(palavra_chave_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(keyworlds_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(keywords_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jRadioButton3)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -774,7 +783,7 @@ public class Pag5 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
-                            .addComponent(keyworlds_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(keywords_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel14)
@@ -1010,6 +1019,36 @@ public class Pag5 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_doi_fieldActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // Cadastro de Trabalho de Conclusão
+        this.titulo_1 = titulo_field.getText();
+        this.id_discente_1 = id_discente_field.getText();
+        this.data_defesa = data_defesa_field.getText();
+        this.resumo = resumo_field.getText();
+        this.palavra_chave = palavra_chave_field.getText();
+        this.abstract_f = abstract_field.getText();
+        this.keywords = keywords_field.getText();
+        this.numero_paginas = paginas_field.getText();
+        this.area_conc_1 = area_conc_field.getText();
+        this.linha_pesquisa_1 = linha_pesquisa_field.getText();
+        this.id_financiador = id_financiador_field.getText();
+        
+        // Cadastro de Produção Intelectual
+        this.id_producao = id_producao_field.getText();
+        this.titulo_2 = titulo_2_field.getText();
+        this.ano = ano_field.getText();
+        this.autores = autores_field.getText();
+        this.noticia = noticia_field.getText();
+        this.numero_pag_inicial = inicial_field.getText();
+        this.numero_pag_inicial = final_field.getText();
+        this.issn = issn_field.getText();
+        this.url = url_field.getText();
+        this.doi = doi_field.getText();
+        this.area_conc_2 = area_conc_2_field.getText();
+        this.linha_pesquisa_2 = linha_pesquisa_2_field.getText();
+        this.projeto_pesquisa_2 = projeto_pesquisa_2_field.getText();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1143,7 +1182,7 @@ public class Pag5 extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
-    private javax.swing.JTextField keyworlds_field;
+    private javax.swing.JTextField keywords_field;
     private javax.swing.JTextField linha_pesquisa_2_field;
     private javax.swing.JTextField linha_pesquisa_field;
     private javax.swing.JTextField membros_field;

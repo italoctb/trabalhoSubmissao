@@ -174,7 +174,7 @@
                                   <Component id="data_defesa_field" min="-2" pref="501" max="-2" attributes="0"/>
                                   <Component id="titulo_field" min="-2" pref="501" max="-2" attributes="0"/>
                                   <Component id="palavra_chave_field" min="-2" pref="501" max="-2" attributes="0"/>
-                                  <Component id="keyworlds_field" min="-2" pref="501" max="-2" attributes="0"/>
+                                  <Component id="keywords_field" min="-2" pref="501" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -416,7 +416,7 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="keyworlds_field" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="keywords_field" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -670,7 +670,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="abstract_field">
     </Component>
-    <Component class="javax.swing.JTextField" name="keyworlds_field">
+    <Component class="javax.swing.JTextField" name="keywords_field">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
@@ -1149,6 +1149,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
