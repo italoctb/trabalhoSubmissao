@@ -14,6 +14,36 @@ public class Pag1 extends javax.swing.JFrame {
     /**
      * Creates new form pag1
      */
+    
+    //Cadastro de financiadores
+    private String id_financiador_1;
+    private String CNPJ_1;
+    private String razao_social;
+    private String Nome_fantasia;
+    private String status_juridico;
+    private String pais;
+    private String site;
+    
+    // Cadastro de Programa de Fomento
+    private String id_programa;
+    private String id_financiador_2;
+    private String Nome_2;
+    
+    // Cadastro de Área de Concentração
+    private String id_area;
+    private String Nome_3;
+    private String descricao_3;
+    private String data_inicio_3;
+    private String data_fim_3;
+    
+    // Cadastro de Linha de Pesquisa
+    private String id_linha;
+    private String nome_4;
+    private String area_associada;
+    private String descricao_4;
+    private String data_inicio_4;
+    private String data_fim_4;
+    
     public Pag1() {
         initComponents();
     }
@@ -31,12 +61,12 @@ public class Pag1 extends javax.swing.JFrame {
         sair2 = new javax.swing.JButton();
         prox1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        cf4 = new javax.swing.JTextField();
-        cf1 = new javax.swing.JTextField();
-        cf3 = new javax.swing.JTextField();
-        cf5 = new javax.swing.JTextField();
-        cf6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        cnpj_field = new javax.swing.JTextField();
+        razao_social_field = new javax.swing.JTextField();
+        nome_fantasia_field = new javax.swing.JTextField();
+        pais_field = new javax.swing.JTextField();
+        site_field = new javax.swing.JTextField();
+        nome_2_field = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -51,34 +81,34 @@ public class Pag1 extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        id_programa_field = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        id_financiador_2_field = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        nome_3_field = new javax.swing.JTextField();
+        id_area_field = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        data_inicio_3_field = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        data_fim_3_field = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        nome_4_field = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        id_linha_field = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
+        area_associada_field = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
+        data_inicio_4_field = new javax.swing.JTextField();
+        data_fim_4_field = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        descricao_3_field = new javax.swing.JTextField();
+        descricao_4_field = new javax.swing.JTextField();
+        id_financiador_field = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -98,27 +128,27 @@ public class Pag1 extends javax.swing.JFrame {
 
         jLabel1.setText("Cadastro de Financiadores");
 
-        cf4.addActionListener(new java.awt.event.ActionListener() {
+        cnpj_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cf4ActionPerformed(evt);
+                cnpj_fieldActionPerformed(evt);
             }
         });
 
-        cf1.addActionListener(new java.awt.event.ActionListener() {
+        razao_social_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cf1ActionPerformed(evt);
+                razao_social_fieldActionPerformed(evt);
             }
         });
 
-        cf3.addActionListener(new java.awt.event.ActionListener() {
+        nome_fantasia_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cf3ActionPerformed(evt);
+                nome_fantasia_fieldActionPerformed(evt);
             }
         });
 
-        cf5.addActionListener(new java.awt.event.ActionListener() {
+        pais_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cf5ActionPerformed(evt);
+                pais_fieldActionPerformed(evt);
             }
         });
 
@@ -164,7 +194,7 @@ public class Pag1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setText("Países:");
+        jLabel7.setText("País:");
 
         jLabel8.setText("Site:");
 
@@ -184,17 +214,17 @@ public class Pag1 extends javax.swing.JFrame {
 
         jLabel16.setText("Descrição:");
 
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+        data_inicio_3_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
+                data_inicio_3_fieldActionPerformed(evt);
             }
         });
 
         jLabel17.setText("Data de Início:");
 
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+        data_fim_3_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
+                data_fim_3_fieldActionPerformed(evt);
             }
         });
 
@@ -214,10 +244,9 @@ public class Pag1 extends javax.swing.JFrame {
 
         jLabel25.setText("Data de Fim:");
 
-        jFormattedTextField1.setText("jFormattedTextField1");
-        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+        id_financiador_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField1ActionPerformed(evt);
+                id_financiador_fieldActionPerformed(evt);
             }
         });
 
@@ -247,41 +276,46 @@ public class Pag1 extends javax.swing.JFrame {
                                             .addComponent(jLabel4)
                                             .addGap(2, 2, 2)))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(cf1, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(razao_social_field, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(layout.createSequentialGroup()
                                             .addGap(8, 8, 8)
                                             .addComponent(federal)
                                             .addGap(18, 18, 18)
                                             .addComponent(estadual)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGap(18, 18, 18)
                                             .addComponent(municipal)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addGap(18, 18, 18)
                                             .addComponent(privado)
-                                            .addGap(86, 86, 86)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jLabel7)
                                             .addGap(2, 2, 2)
-                                            .addComponent(cf5, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(cf3, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(pais_field, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(nome_fantasia_field, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addGap(68, 68, 68)
                                     .addComponent(jLabel10)
                                     .addGap(2, 2, 2)
-                                    .addComponent(jTextField7))
+                                    .addComponent(nome_2_field))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addGap(30, 30, 30)
                                     .addComponent(jLabel11)
                                     .addGap(2, 2, 2)
-                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(id_programa_field, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel12)
                                     .addGap(4, 4, 4)
-                                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(id_financiador_2_field, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addGap(2, 2, 2)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel16)
+                                        .addGap(2, 2, 2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel14)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField10)
-                                    .addComponent(jTextField19, javax.swing.GroupLayout.DEFAULT_SIZE, 649, Short.MAX_VALUE)))
+                                    .addComponent(nome_3_field)
+                                    .addComponent(descricao_3_field, javax.swing.GroupLayout.DEFAULT_SIZE, 649, Short.MAX_VALUE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -290,8 +324,8 @@ public class Pag1 extends javax.swing.JFrame {
                                     .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(2, 2, 2)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField14)
-                                    .addComponent(jTextField20))))
+                                    .addComponent(nome_4_field)
+                                    .addComponent(descricao_4_field))))
                         .addGap(24, 24, 24)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -314,28 +348,26 @@ public class Pag1 extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(prox1)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField15)
-                                        .addComponent(jTextField13)
-                                        .addComponent(jTextField12)
-                                        .addComponent(jTextField16)
-                                        .addComponent(jTextField18, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
-                                        .addComponent(jTextField17))))
+                                        .addComponent(id_linha_field)
+                                        .addComponent(data_fim_3_field)
+                                        .addComponent(data_inicio_3_field)
+                                        .addComponent(area_associada_field)
+                                        .addComponent(data_fim_4_field, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
+                                        .addComponent(data_inicio_4_field))))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(cf4, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
-                                    .addComponent(cf6, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
-                                    .addComponent(jFormattedTextField1))))
+                                    .addComponent(cnpj_field, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
+                                    .addComponent(site_field, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
+                                    .addComponent(id_financiador_field))))
                         .addGap(229, 229, 229))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(45, 45, 45)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel14)
-                            .addComponent(sair2))
+                        .addComponent(sair2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(id_area_field, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(238, 238, 238))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -352,14 +384,14 @@ public class Pag1 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(cf1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(razao_social_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(id_financiador_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(4, 4, 4)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(cf3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cf4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nome_fantasia_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cnpj_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -369,73 +401,73 @@ public class Pag1 extends javax.swing.JFrame {
                     .addComponent(municipal)
                     .addComponent(privado)
                     .addComponent(jLabel7)
-                    .addComponent(cf5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pais_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8)
-                    .addComponent(cf6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(site_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel9)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nome_2_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(id_programa_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(id_financiador_2_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel13)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nome_3_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(id_area_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel16)
-                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(descricao_3_field, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(13, 13, 13)
                         .addComponent(jLabel19)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nome_4_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel20)
                             .addComponent(jLabel22)
-                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(area_associada_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel23)
-                                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(descricao_4_field, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(sair2)
                                     .addComponent(prox1)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(id_linha_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel21))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(data_inicio_4_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel24))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(data_fim_4_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel25))
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(data_inicio_3_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel17))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(data_fim_3_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel18))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -444,67 +476,93 @@ public class Pag1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+    private void data_inicio_3_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_data_inicio_3_fieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
+    }//GEN-LAST:event_data_inicio_3_fieldActionPerformed
 
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+    private void data_fim_3_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_data_fim_3_fieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
+    }//GEN-LAST:event_data_fim_3_fieldActionPerformed
 
     private void sair2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair2ActionPerformed
         this.dispose();
     }//GEN-LAST:event_sair2ActionPerformed
 
     private void prox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prox1ActionPerformed
-        Pag2 p2 = new Pag2();
+        //Cadastro de financiadores
+        this.id_financiador_1 = id_financiador_field.getText();
+        this.CNPJ_1 = cnpj_field.getText();
+        this.razao_social = razao_social_field.getText();
+        this.Nome_fantasia = nome_fantasia_field.getText();
+        this.pais = pais_field.getText();
+        this.site = site_field.getText();
+        
+        // Cadastro de Programa de Fomento
+        this.id_programa = id_programa_field.getText();
+        this.id_financiador_2 = id_financiador_field.getText();
+        this.Nome_2 = nome_2_field.getText();
+        
+        // Cadastro de Área de Concentração
+        this.id_area = id_area_field.getText();
+        this.Nome_3 = nome_3_field.getText();
+        this.descricao_3 = descricao_3_field.getText();
+        this.data_inicio_3 = data_inicio_3_field.getText();
+        this.data_fim_3 = data_fim_3_field.getText();
+        
+        // Cadastro de Linha de Pesquisa
+        this.id_linha = id_linha_field.getText();
+        this.area_associada = area_associada_field.getText();
+        this.descricao_4 = descricao_4_field.getText();
+        this.data_inicio_4 = data_inicio_4_field.getText();
+        this.data_fim_4 = data_fim_4_field.getText();
+        Pag2 p2 = new Pag2(this);
         p2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_prox1ActionPerformed
 
-    private void cf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf1ActionPerformed
-        String a1 = cf1.getText();
-    }//GEN-LAST:event_cf1ActionPerformed
+    private void razao_social_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_razao_social_fieldActionPerformed
+        String a1 = razao_social_field.getText();
+    }//GEN-LAST:event_razao_social_fieldActionPerformed
 
-    private void cf3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf3ActionPerformed
-        String a3 = cf3.getText();
-    }//GEN-LAST:event_cf3ActionPerformed
+    private void nome_fantasia_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_fantasia_fieldActionPerformed
+        String a3 = nome_fantasia_field.getText();
+    }//GEN-LAST:event_nome_fantasia_fieldActionPerformed
 
-    private void cf4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf4ActionPerformed
-        String a4 = cf4.getText();
-    }//GEN-LAST:event_cf4ActionPerformed
+    private void cnpj_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cnpj_fieldActionPerformed
+        String a4 = cnpj_field.getText();
+    }//GEN-LAST:event_cnpj_fieldActionPerformed
 
-    private void cf5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cf5ActionPerformed
-        String a5 = cf5.getText();
-    }//GEN-LAST:event_cf5ActionPerformed
+    private void pais_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pais_fieldActionPerformed
+        String a5 = pais_field.getText();
+    }//GEN-LAST:event_pais_fieldActionPerformed
 
     private void federalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_federalActionPerformed
         if(federal.isSelected()){
-            String a011 = "Federal";
+            this.status_juridico = "Federal";
         }
     }//GEN-LAST:event_federalActionPerformed
 
     private void estadualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estadualActionPerformed
         if(estadual.isSelected()){
-        String a012 = "Estadual";
+            this.status_juridico = "Estadual";
         }
     }//GEN-LAST:event_estadualActionPerformed
 
     private void municipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_municipalActionPerformed
         if(municipal.isSelected()){
-        String a013 = "Municipal";
+            this.status_juridico = "Municipal";
         }
     }//GEN-LAST:event_municipalActionPerformed
 
     private void privadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_privadoActionPerformed
         if(privado.isSelected()){
-        String a014 = "Privado";
+            this.status_juridico = "Privado";
         }
     }//GEN-LAST:event_privadoActionPerformed
 
-    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+    private void id_financiador_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_financiador_fieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+    }//GEN-LAST:event_id_financiador_fieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -543,15 +601,22 @@ public class Pag1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField area_associada_field;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JTextField cf1;
-    private javax.swing.JTextField cf3;
-    private javax.swing.JTextField cf4;
-    private javax.swing.JTextField cf5;
-    private javax.swing.JTextField cf6;
+    private javax.swing.JTextField cnpj_field;
+    private javax.swing.JTextField data_fim_3_field;
+    private javax.swing.JTextField data_fim_4_field;
+    private javax.swing.JTextField data_inicio_3_field;
+    private javax.swing.JTextField data_inicio_4_field;
+    private javax.swing.JTextField descricao_3_field;
+    private javax.swing.JTextField descricao_4_field;
     private javax.swing.JRadioButton estadual;
     private javax.swing.JRadioButton federal;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JTextField id_area_field;
+    private javax.swing.JTextField id_financiador_2_field;
+    private javax.swing.JFormattedTextField id_financiador_field;
+    private javax.swing.JTextField id_linha_field;
+    private javax.swing.JTextField id_programa_field;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -577,23 +642,16 @@ public class Pag1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JRadioButton municipal;
+    private javax.swing.JTextField nome_2_field;
+    private javax.swing.JTextField nome_3_field;
+    private javax.swing.JTextField nome_4_field;
+    private javax.swing.JTextField nome_fantasia_field;
+    private javax.swing.JTextField pais_field;
     private javax.swing.JRadioButton privado;
     private javax.swing.JButton prox1;
+    private javax.swing.JTextField razao_social_field;
     private javax.swing.JButton sair2;
+    private javax.swing.JTextField site_field;
     // End of variables declaration//GEN-END:variables
 }
