@@ -635,42 +635,6 @@ public class Pag2 extends javax.swing.JFrame {
     
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         
-        pdf2 = new PDF();
-        
-        pdf2.setField("ID Professor: "+id_professor);
-        pdf2.setField("Número do Documento: "+numero_documento);
-        pdf2.setField("Tipo do Documento: "+tipo_documento);
-        pdf2.setField("Nome: "+nome);
-        pdf2.setField("Data de Nascimento: "+data_nascimento);
-        pdf2.setField("Nome Social: "+nome_social);
-        pdf2.setField("Sexo: "+sexo);
-        pdf2.setField("Bolsa de Produtividade e Pesquisa? "+bolsa_produtividade);
-        pdf2.setField("Nível: "+nivel);
-        pdf2.setField("Tipo de Vínculo com a Instituição:: "+tipo_vinculo);
-        pdf2.setField("Regime de Trabalho: "+regime_trabalho);
-        pdf2.setField("Categoria: "+categoria);
-        pdf2.setField("Nacionalidade: "+nacionalidade);
-        pdf2.setField("E-mail: "+email);
-        pdf2.setField("Instituição de origem: "+instituicao_origem);
-        pdf2.setField("Ano da Titulação: "+ano_tit);
-        pdf2.setField("País da Titulação: "+pais_tit);
-        pdf2.setField("Instituição da Titulação: "+instituicao_tit);
-        pdf2.setField("Carga Horária Semanal: "+carga_horaria_sem);
-        pdf2.setField("Data de início do vínculo com o programa: "+data_inicio_vinc);
-        pdf2.setField("Data de fim do vínculo com o programa: "+data_fim_vinc);
-        pdf2.setField("Participação em Projetos de Pesquisa (IDs Projetos): "+ppp);
-        pdf2.setField("Participação em Produções Intelectuais (IDs Produções): "+ppi);
-        pdf2.setField("Participação em Bancas de Trabalho de Conclusão (IDs Bancas): "+pbtc);
-        pdf2.setField("Tipo de Documento: "+tipo_documento);
-        
-        try {
-            pdf2.createDoc();
-        } catch (DocumentException ex) {
-            Logger.getLogger(Pag2.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Pag2.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
         //Cadastro de Professores
         this.id_professor = id_professor_field.getText();
         this.numero_documento = numero_documento_field.getText();
@@ -745,6 +709,44 @@ public class Pag2 extends javax.swing.JFrame {
         this.ppp = ppp_field.getText();
         this.ppi = ppi_field.getText();
         this.pbtc = pbtc_field.getText();
+        
+        pdf2 = new PDF();
+        
+        pdf2.setField("ID Professor: "+id_professor);
+        pdf2.setField("Número do Documento: "+numero_documento);
+        pdf2.setField("Tipo do Documento: "+tipo_documento);
+        pdf2.setField("Nome: "+nome);
+        pdf2.setField("Data de Nascimento: "+data_nascimento);
+        pdf2.setField("Nome Social: "+nome_social);
+        pdf2.setField("Sexo: "+sexo);
+        pdf2.setField("Bolsa de Produtividade e Pesquisa? "+bolsa_produtividade);
+        pdf2.setField("Nível: "+nivel);
+        pdf2.setField("Tipo de Vínculo com a Instituição:: "+tipo_vinculo);
+        pdf2.setField("Regime de Trabalho: "+regime_trabalho);
+        pdf2.setField("Categoria: "+categoria);
+        pdf2.setField("Nacionalidade: "+nacionalidade);
+        pdf2.setField("E-mail: "+email);
+        pdf2.setField("Instituição de origem: "+instituicao_origem);
+        pdf2.setField("Ano da Titulação: "+ano_tit);
+        pdf2.setField("País da Titulação: "+pais_tit);
+        pdf2.setField("Instituição da Titulação: "+instituicao_tit);
+        pdf2.setField("Carga Horária Semanal: "+carga_horaria_sem);
+        pdf2.setField("Data de início do vínculo com o programa: "+data_inicio_vinc);
+        pdf2.setField("Data de fim do vínculo com o programa: "+data_fim_vinc);
+        pdf2.setField("Participação em Projetos de Pesquisa (IDs Projetos): "+ppp);
+        pdf2.setField("Participação em Produções Intelectuais (IDs Produções): "+ppi);
+        pdf2.setField("Participação em Bancas de Trabalho de Conclusão (IDs Bancas): "+pbtc);
+        pdf2.setField("Tipo de Documento: "+tipo_documento);
+        
+        try {
+            pdf2.createDoc();
+        } catch (DocumentException ex) {
+            Logger.getLogger(Pag2.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Pag2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
         
         Pag3 p3 = new Pag3(this.pag1_elementos, this);
         p3.setVisible(true);

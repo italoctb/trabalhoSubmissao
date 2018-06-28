@@ -5,6 +5,11 @@
  */
 package form;
 
+import com.itextpdf.text.DocumentException;
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author luci
@@ -511,32 +516,7 @@ public class Pag1 extends javax.swing.JFrame {
     
     private void prox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prox1ActionPerformed
         
-        pdf1 = new PDF();
-        pdf1.setField("ID Financiador: "+id_financiador_1);
-        pdf1.setField("CNPJ: "+CNPJ_1);
-        pdf1.setField("Razão Social: "+razao_social);
-        pdf1.setField("Nome Fantasia: "+Nome_fantasia);
-        pdf1.setField("Status Jurídico: "+status_juridico);
         
-        pdf1.setField("País: "+pais);
-        pdf1.setField("Site: "+site);
-        
-        pdf1.setField("ID Programa: "+id_programa);
-        pdf1.setField("ID Financiador: "+id_financiador_2);
-        pdf1.setField("Nome: "+Nome_2);
-        
-        pdf1.setField("ID Área: "+id_area);
-        pdf1.setField("Nome: "+Nome_3);
-        pdf1.setField("Descrição: "+descricao_3);
-        pdf1.setField("Data de Início: "+data_inicio_3);
-        pdf1.setField("Data de Fim: "+data_fim_3);
-       
-        pdf1.setField("Nome: "+nome_4);
-        pdf1.setField("ID Linha: "+id_linha);
-        pdf1.setField("Área Associada: "+area_associada);
-        pdf1.setField("Descrição: "+descricao_4);
-        pdf1.setField("Data de Início: "+data_inicio_4);
-        pdf1.setField("Data de Fim: "+data_fim_4);
 
 //Cadastro de financiadores
         this.id_financiador_1 = id_financiador_field.getText();
@@ -577,6 +557,42 @@ public class Pag1 extends javax.swing.JFrame {
         this.descricao_4 = descricao_4_field.getText();
         this.data_inicio_4 = data_inicio_4_field.getText();
         this.data_fim_4 = data_fim_4_field.getText();
+        
+        pdf1 = new PDF();
+        pdf1.setField("ID Financiador: "+id_financiador_1);
+        pdf1.setField("CNPJ: "+CNPJ_1);
+        pdf1.setField("Razão Social: "+razao_social);
+        pdf1.setField("Nome Fantasia: "+Nome_fantasia);
+        pdf1.setField("Status Jurídico: "+status_juridico);
+        
+        pdf1.setField("País: "+pais);
+        pdf1.setField("Site: "+site);
+        
+        pdf1.setField("ID Programa: "+id_programa);
+        pdf1.setField("ID Financiador: "+id_financiador_2);
+        pdf1.setField("Nome: "+Nome_2);
+        
+        pdf1.setField("ID Área: "+id_area);
+        pdf1.setField("Nome: "+Nome_3);
+        pdf1.setField("Descrição: "+descricao_3);
+        pdf1.setField("Data de Início: "+data_inicio_3);
+        pdf1.setField("Data de Fim: "+data_fim_3);
+       
+        pdf1.setField("Nome: "+nome_4);
+        pdf1.setField("ID Linha: "+id_linha);
+        pdf1.setField("Área Associada: "+area_associada);
+        pdf1.setField("Descrição: "+descricao_4);
+        pdf1.setField("Data de Início: "+data_inicio_4);
+        pdf1.setField("Data de Fim: "+data_fim_4);
+        
+        try {
+            pdf1.createDoc();
+        } catch (DocumentException ex) {
+            Logger.getLogger(Pag1.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Pag1.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         Pag2 p2 = new Pag2(this);
         p2.setVisible(true);
         this.setVisible(false);
