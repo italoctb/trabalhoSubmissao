@@ -508,6 +508,11 @@ public class Pag5 extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/left-arrow.png")); // NOI18N
         jButton2.setText("Voltar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1150,6 +1155,10 @@ public class Pag5 extends javax.swing.JFrame {
             Logger.getLogger(Pag5.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        Fim fim = new Fim();
+        fim.setVisible(true);
+        this.setVisible(false);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void ingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingActionPerformed
@@ -1157,6 +1166,12 @@ public class Pag5 extends javax.swing.JFrame {
             this.idioma = "Inglês";
         }
     }//GEN-LAST:event_ingActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Pag4 p4 = new Pag4();
+        p4.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -172,10 +172,20 @@ public class Pag3 extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/right-arrow.png")); // NOI18N
         jButton1.setText("Próximo");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/left-arrow.png")); // NOI18N
         jButton2.setText("Voltar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         id_discente_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
@@ -474,6 +484,18 @@ public class Pag3 extends javax.swing.JFrame {
     private void nome_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_fieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_nome_fieldActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Pag4 p4 = new Pag4();
+        p4.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Pag2 p2 = new Pag2();
+        p2.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

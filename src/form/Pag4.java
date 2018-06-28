@@ -199,6 +199,8 @@ public class Pag4 extends javax.swing.JFrame {
 
         jLabel39.setText(",");
 
+        voltar_button.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        voltar_button.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/left-arrow.png")); // NOI18N
         voltar_button.setText("Voltar");
         voltar_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,7 +226,10 @@ public class Pag4 extends javax.swing.JFrame {
 
         jLabel42.setText("(ID Bancas)");
 
+        proximo_button.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        proximo_button.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/right-arrow.png")); // NOI18N
         proximo_button.setText("Próximo");
+        proximo_button.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         proximo_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 proximo_buttonActionPerformed(evt);
@@ -466,7 +471,7 @@ public class Pag4 extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PIA_field, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PCA_field, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel13)
@@ -573,11 +578,15 @@ public class Pag4 extends javax.swing.JFrame {
     }//GEN-LAST:event_PE_PPI_fieldActionPerformed
 
     private void proximo_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proximo_buttonActionPerformed
-        // TODO add your handling code here:
+        Pag5 p5 = new Pag5();
+        p5.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_proximo_buttonActionPerformed
 
     private void voltar_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_buttonActionPerformed
-        // TODO add your handling code here:
+        Pag3 p3 = new Pag3();
+        p3.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_voltar_buttonActionPerformed
 
     /**

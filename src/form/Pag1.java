@@ -594,7 +594,7 @@ public class Pag1 extends javax.swing.JFrame {
         pdf1.setField("Data de Fim: "+data_fim_4);
         
         try {
-            pdf1.createDoc();
+            pdf1.createDoc("1");
         } catch (DocumentException ex) {
             Logger.getLogger(Pag1.class.getName()).log(Level.SEVERE, null, ex);
         } catch (FileNotFoundException ex) {

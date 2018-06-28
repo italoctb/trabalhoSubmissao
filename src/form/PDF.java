@@ -55,11 +55,11 @@ public class PDF {
             frase.add(campos);
         }
     }
-    public void createDoc() throws DocumentException, FileNotFoundException{
+    public void createDoc(String id) throws DocumentException, FileNotFoundException{
         Document document = new Document(PageSize.A4);
         
         
-        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("form2.pdf"));
+        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("form"+id+".pdf"));
         
         document.open();
         PdfContentByte cb = writer.getDirectContent();
@@ -85,11 +85,14 @@ public class PDF {
         try{
             list.add(new FileInputStream(new File("form1.pdf")));
             list.add(new FileInputStream(new File("form2.pdf")));
+            //list.add(new FileInputStream(new File("form3.pdf")));
+            //list.add(new FileInputStream(new File("form4.pdf")));
+            list.add(new FileInputStream(new File("form5.pdf")));
             
-            OutputStream out = new FileOutputStream(new File("form3.pdf"));
+            OutputStream out = new FileOutputStream(new File("result.pdf"));
             
             doMerge(list,out);
-            Desktop.getDesktop().open(new File("form3.pdf"));
+            Desktop.getDesktop().open(new File("result.pdf"));
         }catch(Exception e){
             e.printStackTrace();
         }

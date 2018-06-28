@@ -740,7 +740,7 @@ public class Pag2 extends javax.swing.JFrame {
         pdf2.setField("Tipo de Documento: "+tipo_documento);
         
         try {
-            pdf2.createDoc();
+            pdf2.createDoc("2");
         } catch (DocumentException ex) {
             Logger.getLogger(Pag2.class.getName()).log(Level.SEVERE, null, ex);
         } catch (FileNotFoundException ex) {
