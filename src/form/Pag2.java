@@ -19,7 +19,7 @@ public class Pag2 extends javax.swing.JFrame {
     private String id_professor;
     private String tipo_documento;
     private String numero_documento;
-    private String Nome;
+    private String nome;
     private String data_nascimento;
     private String sexo;
     private String nome_social;
@@ -37,9 +37,9 @@ public class Pag2 extends javax.swing.JFrame {
     private String carga_horaria_sem;
     private String data_inicio_vinc;
     private String data_fim_vinc;
-    private String PPP;
-    private String PPI;
-    private String PBTC;
+    private String ppp;
+    private String ppi;
+    private String pbtc;
     
     public Pag2(Pag1 pag1_elementos) {
         this.pag1_elementos = pag1_elementos;
@@ -123,11 +123,11 @@ public class Pag2 extends javax.swing.JFrame {
         data_inicio_vinc_field = new javax.swing.JFormattedTextField();
         carga_horaria_sem_field = new javax.swing.JFormattedTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        PPP_field = new javax.swing.JTextArea();
+        ppp_field = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
-        PPI_field = new javax.swing.JTextArea();
+        ppi_field = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
-        PBTC_field = new javax.swing.JTextArea();
+        pbtc_field = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -356,17 +356,17 @@ public class Pag2 extends javax.swing.JFrame {
 
         carga_horaria_sem_field.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
-        PPP_field.setColumns(20);
-        PPP_field.setRows(5);
-        jScrollPane1.setViewportView(PPP_field);
+        ppp_field.setColumns(20);
+        ppp_field.setRows(5);
+        jScrollPane1.setViewportView(ppp_field);
 
-        PPI_field.setColumns(20);
-        PPI_field.setRows(5);
-        jScrollPane2.setViewportView(PPI_field);
+        ppi_field.setColumns(20);
+        ppi_field.setRows(5);
+        jScrollPane2.setViewportView(ppi_field);
 
-        PBTC_field.setColumns(20);
-        PBTC_field.setRows(5);
-        jScrollPane3.setViewportView(PBTC_field);
+        pbtc_field.setColumns(20);
+        pbtc_field.setRows(5);
+        jScrollPane3.setViewportView(pbtc_field);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -514,7 +514,7 @@ public class Pag2 extends javax.swing.JFrame {
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING)))
                             .addComponent(jButton1))))
-                .addContainerGap(331, Short.MAX_VALUE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -625,14 +625,101 @@ public class Pag2 extends javax.swing.JFrame {
         v1.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+    PDF pdf2;
+    
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+        
+        pdf2 = new PDF();
+        
+        pdf2.setField("ID Professor: "+id_professor);
+        pdf2.setField("Número do Documento: "+numero_documento);
+        pdf2.setField("Tipo do Documento: "+tipo_documento);
+        pdf2.setField("Nome: "+nome);
+        pdf2.setField("Data de Nascimento: "+data_nascimento);
+        pdf2.setField("Nome Social: "+nome_social);
+        pdf2.setField("Sexo: "+sexo);
+        pdf2.setField("Bolsa de Produtividade e Pesquisa? "+bolsa_produtividade);
+        pdf2.setField("Nível: "+nivel);
+        pdf2.setField("Tipo de Vínculo com a Instituição:: "+tipo_vinculo);
+        pdf2.setField("Regime de Trabalho: "+regime_trabalho);
+        pdf2.setField("Categoria: "+categoria);
+        pdf2.setField("Nacionalidade: "+nacionalidade);
+        pdf2.setField("E-mail: "+email);
+        pdf2.setField("Instituição de origem: "+instituicao_origem);
+        pdf2.setField("Ano da Titulação: "+ano_tit);
+        pdf2.setField("País da Titulação: "+pais_tit);
+        pdf2.setField("Instituição da Titulação: "+instituicao_tit);
+        pdf2.setField("Carga Horária Semanal: "+carga_horaria_sem);
+        pdf2.setField("Data de início do vínculo com o programa: "+data_inicio_vinc);
+        pdf2.setField("Data de fim do vínculo com o programa: "+data_fim_vinc);
+        pdf2.setField("Participação em Projetos de Pesquisa (IDs Projetos): "+ppp);
+        pdf2.setField("Participação em Produções Intelectuais (IDs Produções): "+ppi);
+        pdf2.setField("Participação em Bancas de Trabalho de Conclusão (IDs Bancas): "+pbtc);
+        pdf2.setField("Tipo de Documento: "+tipo_documento);
+        
         //Cadastro de Professores
         this.id_professor = id_professor_field.getText();
         this.numero_documento = numero_documento_field.getText();
-        this.Nome = nome_field.getText();
+        if(passaporte.isSelected()){
+            this.tipo_documento = "Passaporte";
+        }
+        if(rg.isSelected()){
+            this.tipo_documento = "RG";
+        }
+        if(cpf.isSelected()){
+            this.tipo_documento = "CPF";
+        }
+        this.nome = nome_field.getText();
         this.data_nascimento = data_nascimento_field.getText();
         this.nome_social = nome_social_field.getText();
+        if(masculino.isSelected()){
+            this.sexo = "Masculino";
+        }
+        if(feminino.isSelected()){
+            this.sexo = "Feminino";
+        }
+        if(sim.isSelected()){
+            this.bolsa_produtividade = "Sim";
+        }
+        if(nao.isSelected()){
+            this.bolsa_produtividade = "Não";
+        }
+        if(graduacao.isSelected()){
+            this.nivel = "Graduação";
+        }
+        if(especializacao.isSelected()){
+            this.nivel = "Especialização";
+        }if(mestrado.isSelected()){
+            this.nivel = "Mestrado";
+        }
+        if(doutorado.isSelected()){
+            this.nivel = "Doutorado";
+        }
+        if(servidor.isSelected()){
+            this.tipo_vinculo = "Servidor Público";
+        }
+        if(clt.isSelected()){
+            this.tipo_vinculo = "CLT";
+        }
+        if(juridica.isSelected()){
+            this.tipo_vinculo = "Pessoa jurídica";
+        }
+        if(exclusiva.isSelected()){
+            this.regime_trabalho = "Dedicação exclusiva";
+        }
+        if(quarentaH.isSelected()){
+            this.regime_trabalho = "40H";
+        }
+        if(vinteH.isSelected()){
+            this.regime_trabalho = "20H";
+        }
+        if(colaborador.isSelected()){
+            this.categoria = "Colaborador(a)";
+        }
+        if(permanente.isSelected()){
+            this.categoria = "Permanente";
+        }
         this.nacionalidade = nacionalidade_field.getText();
         this.email = email_field.getText();
         this.instituicao_origem = instituicao_origem_field.getText();
@@ -642,9 +729,9 @@ public class Pag2 extends javax.swing.JFrame {
         this.carga_horaria_sem = carga_horaria_sem_field.getText();
         this.data_inicio_vinc = data_inicio_vinc_field.getText();
         this.data_fim_vinc = data_fim_vinc_field.getText();
-        this.PPP = PPP_field.getText();
-        this.PPI = PPI_field.getText();
-        this.PBTC = PBTC_field.getText();
+        this.ppp = ppp_field.getText();
+        this.ppi = ppi_field.getText();
+        this.pbtc = pbtc_field.getText();
         
         Pag3 p3 = new Pag3(this.pag1_elementos, this);
         p3.setVisible(true);
@@ -652,117 +739,79 @@ public class Pag2 extends javax.swing.JFrame {
     }//GEN-LAST:event_b2ActionPerformed
 
     private void passaporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passaporteActionPerformed
-        if(passaporte.isSelected()){
-            this.tipo_documento = "Passaporte";
-        }
+        
     }//GEN-LAST:event_passaporteActionPerformed
 
     private void vinteHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vinteHActionPerformed
-        if(vinteH.isSelected()){
-            this.regime_trabalho = "20H";
-        }
+        
     }//GEN-LAST:event_vinteHActionPerformed
 
     private void rgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rgActionPerformed
-        if(rg.isSelected()){
-            this.tipo_documento = "RG";
-        }
+        
     }//GEN-LAST:event_rgActionPerformed
 
     private void cpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpfActionPerformed
-        if(cpf.isSelected()){
-            this.tipo_documento = "CPF";
-        }
+        
     }//GEN-LAST:event_cpfActionPerformed
 
     private void masculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_masculinoActionPerformed
-        if(masculino.isSelected()){
-            this.sexo = "Masculino";
-        }
+        
     }//GEN-LAST:event_masculinoActionPerformed
 
     private void femininoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_femininoActionPerformed
-        if(feminino.isSelected()){
-            this.sexo = "Feminino";
-        }
+        
     }//GEN-LAST:event_femininoActionPerformed
 
     private void simActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simActionPerformed
-        if(sim.isSelected()){
-            this.bolsa_produtividade = "Sim";
-        }
+        
     }//GEN-LAST:event_simActionPerformed
 
     private void naoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_naoActionPerformed
-        if(nao.isSelected()){
-            this.bolsa_produtividade = "Não";
-        }
+        
     }//GEN-LAST:event_naoActionPerformed
 
     private void graduacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graduacaoActionPerformed
-        if(graduacao.isSelected()){
-            this.nivel = "Graduação";
-        }
+        
     }//GEN-LAST:event_graduacaoActionPerformed
 
     private void especializacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_especializacaoActionPerformed
-        if(especializacao.isSelected()){
-            this.nivel = "Especialização";
-        }
+        
     }//GEN-LAST:event_especializacaoActionPerformed
 
     private void mestradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mestradoActionPerformed
-        if(mestrado.isSelected()){
-            this.nivel = "Mestrado";
-        }
+        
     }//GEN-LAST:event_mestradoActionPerformed
 
     private void doutoradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doutoradoActionPerformed
-        if(doutorado.isSelected()){
-            this.nivel = "Doutorado";
-        }
+        
     }//GEN-LAST:event_doutoradoActionPerformed
 
     private void servidorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_servidorActionPerformed
-        if(servidor.isSelected()){
-            this.tipo_vinculo = "Servidor Público";
-        }
+        
     }//GEN-LAST:event_servidorActionPerformed
 
     private void cltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cltActionPerformed
-        if(clt.isSelected()){
-            this.tipo_vinculo = "CLT";
-        }
+        
     }//GEN-LAST:event_cltActionPerformed
 
     private void juridicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_juridicaActionPerformed
-        if(juridica.isSelected()){
-            this.tipo_vinculo = "Pessoa jurídica";
-        }
+        
     }//GEN-LAST:event_juridicaActionPerformed
 
     private void exclusivaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exclusivaActionPerformed
-        if(exclusiva.isSelected()){
-            this.regime_trabalho = "Dedicação exclusiva";
-        }
+        
     }//GEN-LAST:event_exclusivaActionPerformed
 
     private void quarentaHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quarentaHActionPerformed
-        if(quarentaH.isSelected()){
-            this.regime_trabalho = "40H";
-        }
+        
     }//GEN-LAST:event_quarentaHActionPerformed
 
     private void colaboradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colaboradorActionPerformed
-        if(colaborador.isSelected()){
-            this.categoria = "Colaborador(a)";
-        }
+        
     }//GEN-LAST:event_colaboradorActionPerformed
 
     private void permanenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_permanenteActionPerformed
-        if(permanente.isSelected()){
-            this.categoria = "Permanente";
-        }
+        
     }//GEN-LAST:event_permanenteActionPerformed
 
     /**
@@ -808,9 +857,6 @@ public class Pag2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea PBTC_field;
-    private javax.swing.JTextArea PPI_field;
-    private javax.swing.JTextArea PPP_field;
     private javax.swing.JFormattedTextField ano_tit_field;
     private javax.swing.JButton b2;
     private javax.swing.ButtonGroup buttonGroup1;
@@ -871,7 +917,10 @@ public class Pag2 extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField numero_documento_field;
     private javax.swing.JTextField pais_tit_field;
     private javax.swing.JRadioButton passaporte;
+    private javax.swing.JTextArea pbtc_field;
     private javax.swing.JRadioButton permanente;
+    private javax.swing.JTextArea ppi_field;
+    private javax.swing.JTextArea ppp_field;
     private javax.swing.JRadioButton quarentaH;
     private javax.swing.JRadioButton rg;
     private javax.swing.JRadioButton servidor;
