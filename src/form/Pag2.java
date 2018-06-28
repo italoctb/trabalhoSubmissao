@@ -5,6 +5,11 @@
  */
 package form;
 
+import com.itextpdf.text.DocumentException;
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author luci
@@ -657,6 +662,14 @@ public class Pag2 extends javax.swing.JFrame {
         pdf2.setField("Participação em Produções Intelectuais (IDs Produções): "+ppi);
         pdf2.setField("Participação em Bancas de Trabalho de Conclusão (IDs Bancas): "+pbtc);
         pdf2.setField("Tipo de Documento: "+tipo_documento);
+        
+        try {
+            pdf2.createDoc();
+        } catch (DocumentException ex) {
+            Logger.getLogger(Pag2.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Pag2.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
         //Cadastro de Professores
         this.id_professor = id_professor_field.getText();

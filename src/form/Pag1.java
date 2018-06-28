@@ -516,6 +516,8 @@ public class Pag1 extends javax.swing.JFrame {
         pdf1.setField("CNPJ: "+CNPJ_1);
         pdf1.setField("Razão Social: "+razao_social);
         pdf1.setField("Nome Fantasia: "+Nome_fantasia);
+        pdf1.setField("Status Jurídico: "+status_juridico);
+        
         pdf1.setField("País: "+pais);
         pdf1.setField("Site: "+site);
         
@@ -541,6 +543,18 @@ public class Pag1 extends javax.swing.JFrame {
         this.CNPJ_1 = cnpj_field.getText();
         this.razao_social = razao_social_field.getText();
         this.Nome_fantasia = nome_fantasia_field.getText();
+        if(federal.isSelected()){
+            this.status_juridico = "Federal";
+        }
+        if(estadual.isSelected()){
+            this.status_juridico = "Estadual";
+        }
+        if(municipal.isSelected()){
+            this.status_juridico = "Municipal";
+        }
+        if(privado.isSelected()){
+            this.status_juridico = "Privado";
+        }
         this.pais = pais_field.getText();
         this.site = site_field.getText();
         
@@ -569,43 +583,35 @@ public class Pag1 extends javax.swing.JFrame {
     }//GEN-LAST:event_prox1ActionPerformed
 
     private void razao_social_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_razao_social_fieldActionPerformed
-        String a1 = razao_social_field.getText();
+        
     }//GEN-LAST:event_razao_social_fieldActionPerformed
 
     private void nome_fantasia_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_fantasia_fieldActionPerformed
-        String a3 = nome_fantasia_field.getText();
+        
     }//GEN-LAST:event_nome_fantasia_fieldActionPerformed
 
     private void cnpj_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cnpj_fieldActionPerformed
-        String a4 = cnpj_field.getText();
+        
     }//GEN-LAST:event_cnpj_fieldActionPerformed
 
     private void pais_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pais_fieldActionPerformed
-        String a5 = pais_field.getText();
+        
     }//GEN-LAST:event_pais_fieldActionPerformed
 
     private void federalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_federalActionPerformed
-        if(federal.isSelected()){
-            this.status_juridico = "Federal";
-        }
+        
     }//GEN-LAST:event_federalActionPerformed
 
     private void estadualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estadualActionPerformed
-        if(estadual.isSelected()){
-            this.status_juridico = "Estadual";
-        }
+        
     }//GEN-LAST:event_estadualActionPerformed
 
     private void municipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_municipalActionPerformed
-        if(municipal.isSelected()){
-            this.status_juridico = "Municipal";
-        }
+        
     }//GEN-LAST:event_municipalActionPerformed
 
     private void privadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_privadoActionPerformed
-        if(privado.isSelected()){
-            this.status_juridico = "Privado";
-        }
+        
     }//GEN-LAST:event_privadoActionPerformed
 
     private void id_financiador_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_financiador_fieldActionPerformed
