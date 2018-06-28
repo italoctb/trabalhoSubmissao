@@ -712,6 +712,7 @@ public class Pag2 extends javax.swing.JFrame {
         
         pdf2 = new PDF();
         
+        pdf2.setField("---Cadastro de Professores---");
         pdf2.setField("ID Professor: "+id_professor);
         pdf2.setField("Número do Documento: "+numero_documento);
         pdf2.setField("Tipo do Documento: "+tipo_documento);

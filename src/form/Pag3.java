@@ -20,6 +20,7 @@ public class Pag3 extends javax.swing.JFrame {
     public Pag3(Pag1 pag1_elementos, Pag2 pag2_elementos) {
         this.pag1_elementos = pag1_elementos;
         this.pag2_elementos = pag2_elementos;
+        
         initComponents();
     }
     

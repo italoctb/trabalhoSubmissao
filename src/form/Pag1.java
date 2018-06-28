@@ -559,25 +559,33 @@ public class Pag1 extends javax.swing.JFrame {
         this.data_fim_4 = data_fim_4_field.getText();
         
         pdf1 = new PDF();
+        
+        
+        pdf1.setField("---Cadastro de Financiadores---");
         pdf1.setField("ID Financiador: "+id_financiador_1);
         pdf1.setField("CNPJ: "+CNPJ_1);
         pdf1.setField("Razão Social: "+razao_social);
         pdf1.setField("Nome Fantasia: "+Nome_fantasia);
         pdf1.setField("Status Jurídico: "+status_juridico);
-        
         pdf1.setField("País: "+pais);
         pdf1.setField("Site: "+site);
         
+        pdf1.setField(" ");
+        pdf1.setField("---Cadastro de Programa de Fomento---");
         pdf1.setField("ID Programa: "+id_programa);
         pdf1.setField("ID Financiador: "+id_financiador_2);
         pdf1.setField("Nome: "+Nome_2);
-        
+       
+        pdf1.setField(" ");
+        pdf1.setField("---Cadastro de Área de Concentração---");
         pdf1.setField("ID Área: "+id_area);
         pdf1.setField("Nome: "+Nome_3);
         pdf1.setField("Descrição: "+descricao_3);
         pdf1.setField("Data de Início: "+data_inicio_3);
         pdf1.setField("Data de Fim: "+data_fim_3);
        
+        pdf1.setField(" ");
+        pdf1.setField("---Cadastro de Linha de Pesquisa---");
         pdf1.setField("Nome: "+nome_4);
         pdf1.setField("ID Linha: "+id_linha);
         pdf1.setField("Área Associada: "+area_associada);

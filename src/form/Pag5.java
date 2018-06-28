@@ -5,6 +5,11 @@
  */
 package form;
 
+import com.itextpdf.text.DocumentException;
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author luci
@@ -184,7 +189,8 @@ public class Pag5 extends javax.swing.JFrame {
 
         jLabel2.setText("ID Financiador:");
 
-        jLabel1.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel1.setText("Cadastro de Trabalho de Conclusão");
 
         jLabel3.setText("Título:");
@@ -373,7 +379,8 @@ public class Pag5 extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Noto Sans", 3, 14)); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/settings.png")); // NOI18N
         jLabel12.setText("Cadastro de Produção Intelectual");
 
         jLabel25.setText("ID Produção:");
@@ -488,14 +495,19 @@ public class Pag5 extends javax.swing.JFrame {
 
         jLabel43.setText("Projeto de Pesquisa:");
 
-        jButton1.setText("jButton1");
+        jButton1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/right-arrow.png")); // NOI18N
+        jButton1.setText("Próximo");
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("jButton2");
+        jButton2.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("/home/luci/Documentos/EngSoftware/trabalhoSubmissao/src/icons/left-arrow.png")); // NOI18N
+        jButton2.setText("Voltar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -696,30 +708,29 @@ public class Pag5 extends javax.swing.JFrame {
                                         .addComponent(periodico))))
                             .addComponent(projeto_pesquisa_2_field, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(641, 641, 641)
-                        .addComponent(jButton2)
+                        .addGap(732, 732, 732)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel24)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sim)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(nao))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(3, 3, 3)
-                                        .addComponent(servidor)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(clt)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(juridica))))
+                                .addComponent(jLabel24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(sim)
+                                .addGap(18, 18, 18)
+                                .addComponent(nao))
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(3, 3, 3)
+                                .addComponent(servidor)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton1)))))
+                                .addComponent(clt)
+                                .addGap(18, 18, 18)
+                                .addComponent(juridica)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(286, 286, 286))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -917,15 +928,11 @@ public class Pag5 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void dissertacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dissertacaoActionPerformed
-        if(dissertacao.isSelected()){
-            this.tipo_tcc = "Dissertação";
-        }
+        
     }//GEN-LAST:event_dissertacaoActionPerformed
 
     private void teseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teseActionPerformed
-        if(tese.isSelected()){
-            this.tipo_tcc = "Tese";
-        }
+        
     }//GEN-LAST:event_teseActionPerformed
 
     private void ptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ptActionPerformed
@@ -1075,9 +1082,9 @@ public class Pag5 extends javax.swing.JFrame {
     private void doi_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doi_fieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_doi_fieldActionPerformed
-
+    PDF pdf5;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // Cadastro de Trabalho de Conclusão
+       // Cadastro de Trabalho de Conclusão
         this.titulo_1 = titulo_field.getText();
         this.id_discente_1 = id_discente_field.getText();
         this.data_defesa = data_defesa_field.getText();
@@ -1097,13 +1104,52 @@ public class Pag5 extends javax.swing.JFrame {
         this.autores = autores_field.getText();
         this.noticia = noticia_field.getText();
         this.numero_pag_inicial = inicial_field.getText();
-        this.numero_pag_inicial = final_field.getText();
+        this.numero_pag_final = final_field.getText();
         this.issn = issn_field.getText();
         this.url = url_field.getText();
         this.doi = doi_field.getText();
         this.area_conc_2 = area_conc_2_field.getText();
         this.linha_pesquisa_2 = linha_pesquisa_2_field.getText();
         this.projeto_pesquisa_2 = projeto_pesquisa_2_field.getText();
+        
+        pdf5 = new PDF();
+        
+        pdf5.setField("---Cadastro de Trabalho de Conclusão---");
+        pdf5.setField("Título: "+titulo_1);
+        pdf5.setField("ID Discente: "+id_discente_1);
+        pdf5.setField("Data da Defesa: "+data_defesa);
+        pdf5.setField("Resumo: "+resumo);
+        pdf5.setField("Palavras_chave: "+palavra_chave);
+        pdf5.setField("Abstract: "+abstract_f);
+        pdf5.setField("Keywords: "+keywords);
+        pdf5.setField("Nº de Páginas: "+numero_paginas);
+        pdf5.setField("Área de Concentração: "+area_conc_1);
+        pdf5.setField("Linha de Pesquisa: "+linha_pesquisa_1);
+        pdf5.setField("ID Financiador: "+id_financiador);
+        
+        pdf5.setField("---Cadastro de Produção Intelectual---");
+        pdf5.setField("ID Produção: "+id_producao);
+        pdf5.setField("Título: "+titulo_2);
+        pdf5.setField("Ano: "+ano);
+        pdf5.setField("Autores: "+autores);
+        pdf5.setField("Jornal/Revista: "+noticia);
+        pdf5.setField("Página Inicial: "+numero_pag_inicial);
+        pdf5.setField("Página Final: "+numero_pag_final);
+        pdf5.setField("ISSN: "+issn);
+        pdf5.setField("URL: "+url);
+        pdf5.setField("DOI: "+doi);
+        pdf5.setField("Área de Concentração: "+area_conc_2);
+        pdf5.setField("Linha de Pesquisa: "+linha_pesquisa_2);
+        pdf5.setField("Projeto de Pesquisa: "+projeto_pesquisa_2);
+        
+        try {
+            pdf5.createDoc("5");
+        } catch (DocumentException ex) {
+            Logger.getLogger(Pag5.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Pag5.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void ingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingActionPerformed
